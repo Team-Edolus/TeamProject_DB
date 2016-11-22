@@ -27,7 +27,7 @@
         {
             this.graphics = new GraphicsDeviceManager(this);
             this.Content.RootDirectory = "Content";
-            ////graphics.IsFullScreen = true;
+            //this.graphics.IsFullScreen = true;
             this.IsMouseVisible = true;
             this.graphics.PreferredBackBufferWidth = 1280;
             this.graphics.PreferredBackBufferHeight = 720;
@@ -77,11 +77,11 @@
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
-                Keyboard.GetState().IsKeyDown(Keys.Escape))
-            {
-                this.Exit();
-            }
+            //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
+            //    Keyboard.GetState().IsKeyDown(Keys.Escape))
+            //{
+            //    this.Exit();
+            //}
 
             this.controller.CheckForInput();
             this.engine.Update(gameTime);

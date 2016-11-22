@@ -1,7 +1,7 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.Abilities
 {
     using LostRPG_MonoGame.Interfaces;
-    
+
     public abstract class Ability : GameObject, IAbility, ITimeoutable
     {
         private int maxLifespanInMS;

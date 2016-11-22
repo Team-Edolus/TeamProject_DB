@@ -1,9 +1,10 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.Units.Character
 {
     using System;
     using LostRPG_MonoGame.GameEngine;
     using LostRPG_MonoGame.Graphics;
     using LostRPG_MonoGame.Interfaces;
+    using LostRPG_MonoGame.Structure.Abilities;
 
     public class Warrior : CharacterUnit, IMeleeAttacking
     {
@@ -97,10 +98,10 @@
 
         private Charge UseCharge() // TODO: Implement proper range!
         {
+            const int newAbilitySizeX = 112;
+            const int newAbilitySizeY = 112;
             var newAbilityX = this.X - 48;
             var newAbilityY = this.Y - 48;
-            var newAbilitySizeX = 112;
-            var newAbilitySizeY = 112;
             return new Charge(newAbilityX, newAbilityY, newAbilitySizeX, newAbilitySizeY, this);
         }
     }

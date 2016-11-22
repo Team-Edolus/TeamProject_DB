@@ -1,4 +1,4 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.Units.FriendlyUnits
 {
     using LostRPG_MonoGame.Graphics;
 

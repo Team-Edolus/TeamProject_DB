@@ -1,5 +1,6 @@
 ﻿namespace LostRPG_MonoGame.Structure
 {
+    ////TODO: Add enum "ObstacleTypes"; Add non-required property ObstacleType
     /// <summary> 
     /// Clifs, Trees, Rivers, etc.
     /// </summary>

@@ -1,10 +1,13 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.Regions
 {
     using System;
     using System.Collections.Generic;
     using LostRPG_MonoGame.GameEngine;
     using LostRPG_MonoGame.Graphics;
     using LostRPG_MonoGame.Interfaces;
+    using LostRPG_MonoGame.Structure.BoostItems;
+    using LostRPG_MonoGame.Structure.Units.EnemyUnits;
+    using LostRPG_MonoGame.Structure.Units.FriendlyUnits;
 
     public abstract class Region<T> : GameObject, IRegionInterface
         where T : Region<T>, new()
@@ -27,8 +30,12 @@
             this.RegionObstacles = new List<Obstacle>();
             this.RegionGateways = new List<Gateway>();
             this.RegionItems = new List<Item>();
+
+            this.ObstacleParser = new ObstacleParser();
             this.isInitialised = false;
         }
+
+        protected IObstacleParser ObstacleParser { get; }
         
         public static T GetInstance
         {

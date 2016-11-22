@@ -1,7 +1,7 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.Units.Character
 {
     using LostRPG_MonoGame.Graphics;
-    
+
     public class Ranger : CharacterUnit // TODO
     {
         public Ranger(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 

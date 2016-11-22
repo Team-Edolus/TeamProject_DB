@@ -4,22 +4,32 @@
     using System.Collections.Generic;
     using LostRPG_MonoGame.Interfaces;
     using LostRPG_MonoGame.Structure;
+    using LostRPG_MonoGame.Structure.Abilities;
+    using LostRPG_MonoGame.Structure.BoostItems;
+    using LostRPG_MonoGame.Structure.Regions;
+    using LostRPG_MonoGame.Structure.Units.Character;
+    using LostRPG_MonoGame.Structure.Units.EnemyUnits;
+    using LostRPG_MonoGame.Structure.Units.FriendlyUnits;
 
     public sealed class RegionEntities
     {
-        ////bg->(items)->enemies->player  ?obstacles;
-        private static RegionEntities instance;
+        ////Load Order: Background -> (Items) -> Enemies -> Player
+        
+        private static RegionEntities _instance;
 
         private readonly IPaintInterface painter;
 
         private IRegionInterface currentRegion;
 
-        private RegionEntities(IPaintInterface painter)
+        private RegionEntities(Engine engine ,IPaintInterface painter)
         {
             this.painter = painter;
+            this.ParentEngine = engine;
         }
 
-        public CharacterUnit Player { get; private set; }
+        public Engine ParentEngine { get; }
+
+        public ICharacterUnit Player { get; private set; }
 
         public List<FriendlyNPCUnit> FriendlyNPCs { get; private set; }
 
@@ -33,20 +43,20 @@
 
         public List<Item> Items { get; private set; }
 
-        public static void IntantiateClass(IPaintInterface painter)
+        public static void IntantiateClass(Engine engine, IPaintInterface painter)
         {
-            instance = new RegionEntities(painter);
-            instance.SetupFirstRegion();
+            _instance = new RegionEntities(engine, painter);
+            _instance.SetupFirstRegion();
         }
 
         public static RegionEntities GetInstance()
         {
-            if (instance == null)
+            if (_instance == null)
             {
                 throw new Exception("Problem with Singleton(Region Entities)!");
             }
 
-            return instance;
+            return _instance;
         }
 
         public void InitialiseNewRegion(IRegionInterface newRegion)
@@ -106,8 +116,8 @@
         {
             this.FriendlyNPCs = new List<FriendlyNPCUnit>();
             this.Enemies = new List<EnemyNPCUnit>();
-            this.Abilities = new List<Ability>();
             this.Obstacles = new List<Obstacle>();
+            this.Abilities = new List<Ability>();
             this.Gateways = new List<Gateway>();
             this.Items = new List<Item>();
 

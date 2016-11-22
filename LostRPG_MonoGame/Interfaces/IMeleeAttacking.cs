@@ -2,6 +2,7 @@
 {
     using System;
     using LostRPG_MonoGame.Structure;
+    using LostRPG_MonoGame.Structure.Abilities;
 
     public interface IMeleeAttacking
     {

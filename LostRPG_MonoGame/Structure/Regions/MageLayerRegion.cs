@@ -1,6 +1,7 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.Regions
 {
     using LostRPG_MonoGame.Graphics;
+    using LostRPG_MonoGame.Structure.Units.EnemyUnits;
 
     public class MageLayerRegion : Region<MageLayerRegion>
     {
@@ -20,18 +21,20 @@
 
         protected override void SetGateways()
         {
-            //// To ValleyRegion Gateway
+            //// Gateway to ValleyRegion
             this.RegionGateways.Add(new Gateway(0, 496, 3, 112,
                 () => this.RegionEntities.InitialiseNewRegion(ValleyRegion.GetInstance), 1248, 512,
-                (x, y) => this.RegionEntities.Player.Relocate(x, y)));
-            //// To MageHouseRegion Gateway
-            this.RegionGateways.Add(new Gateway(1056, 176, 32, 3,
+                (x, y) => this.RegionEntities.ParentEngine.RelocatePlayer(x, y)));
+            //// Gateway to MageHouseRegion
+            this.RegionGateways.Add(new Gateway(1056, 182, 24, 24,
                 () => this.RegionEntities.InitialiseNewRegion(MageHouseRegion.GetInstance), 544, 544,
-                (x, y) => this.RegionEntities.Player.Relocate(x, y)));
+                (x, y) => this.RegionEntities.ParentEngine.RelocatePlayer(x, y)));
         }
 
         protected override void SetObstacles()
         {
+            var obstacles = this.ObstacleParser.GetObstacles<MageLayerRegion>();
+            this.RegionObstacles.AddRange(obstacles);
         }
 
         protected override void SetBoostItems()

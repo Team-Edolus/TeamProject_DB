@@ -1,4 +1,4 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.BoostItems
 {
     using LostRPG_MonoGame.Graphics;
 

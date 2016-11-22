@@ -1,9 +1,10 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.Units
 {
     using System;
     using LostRPG_MonoGame.GameEngine;
     using LostRPG_MonoGame.Graphics;
     using LostRPG_MonoGame.Interfaces;
+    using LostRPG_MonoGame.Structure.Abilities;
 
     public abstract class Unit : GameObject, IUnit, IMoveable, IRenderable
     {
@@ -63,12 +64,6 @@
         {
             this.X += this.MovementSpeed*this.Direction.DirX;
             this.Y += this.MovementSpeed*this.Direction.DirY;
-        }
-
-        public void Relocate(int x, int y)
-        {
-            this.X = x;
-            this.Y = y;
         }
 
         public virtual ReactionTypeEnum ReactToAbility(AbilityEffectEnum abilityEffect)

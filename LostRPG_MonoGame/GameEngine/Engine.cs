@@ -1,10 +1,14 @@
-﻿namespace LostRPG_MonoGame.GameEngine
+﻿//// ReSharper disable MemberCanBeMadeStatic.Local
+namespace LostRPG_MonoGame.GameEngine
 {
     using System;
     using System.Linq;
     using LostRPG_MonoGame.Controllers;
     using LostRPG_MonoGame.Interfaces;
     using LostRPG_MonoGame.Structure;
+    using LostRPG_MonoGame.Structure.Abilities;
+    using LostRPG_MonoGame.Structure.BoostItems;
+    using LostRPG_MonoGame.Structure.Units.Character;
     using Microsoft.Xna.Framework;
 
     public sealed class Engine
@@ -21,7 +25,7 @@
             this.painter = painter;
             this.totalElapsedTime = TimeSpan.Zero;
             ////
-            RegionEntities.IntantiateClass(this.painter);
+            RegionEntities.IntantiateClass(this, this.painter);
             this.regionEntities = RegionEntities.GetInstance();
             ////
             this.SubscribeToController();
@@ -42,6 +46,19 @@
                 this.painter.RemoveObject(timedOutObj as IRenderable);
             }
         }
+
+        public void RelocateUnit(int x, int y, IUnit unit)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RelocatePlayer(int x, int y)
+        {
+
+            this.regionEntities.Player.X = x;
+            this.regionEntities.Player.Y = y;
+        }
+        
         ////----------------------------------------------------------------------------------------\\
 
         private void SubscribeToController()
@@ -166,7 +183,7 @@
 
             if (colisionDetected)
             {
-                this.regionEntities.Player.Relocate(buffX, buffY);
+                this.RelocatePlayer(buffX, buffY);
             }
 
             ////Check for gateways
@@ -213,7 +230,7 @@
                         {
                             if (this.DoIntersect(mouseRect, enemyNpcUnit))
                             {
-                                this.regionEntities.Player.Relocate(mouseX, mouseY);
+                                this.RelocatePlayer(mouseX, mouseY);
                             }
                         }
                     }

@@ -2,6 +2,9 @@
 {
     using System.Collections.Generic;
     using LostRPG_MonoGame.Structure;
+    using LostRPG_MonoGame.Structure.BoostItems;
+    using LostRPG_MonoGame.Structure.Units.EnemyUnits;
+    using LostRPG_MonoGame.Structure.Units.FriendlyUnits;
 
     public interface IRegionInterface : IRenderable
     {

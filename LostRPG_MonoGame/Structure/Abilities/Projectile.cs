@@ -1,4 +1,4 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.Abilities
 {
     using System;
     using LostRPG_MonoGame.GameEngine;

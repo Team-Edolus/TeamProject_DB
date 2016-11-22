@@ -1,11 +1,12 @@
-﻿namespace LostRPG_MonoGame.Structure
+﻿namespace LostRPG_MonoGame.Structure.Units.Character
 {
     using System;
     using LostRPG_MonoGame.GameEngine;
     using LostRPG_MonoGame.Graphics;
     using LostRPG_MonoGame.Interfaces;
+    using LostRPG_MonoGame.Structure.Abilities;
 
-    public abstract class CharacterUnit : Unit, IAbilityUseable
+    public abstract class CharacterUnit : Unit, ICharacterUnit, IAbilityUseable
     {
         protected CharacterUnit(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 
             int attackPoints, int defensePoints, int movementSpeed, SpriteType spriteType) 
