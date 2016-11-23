@@ -6,7 +6,7 @@
     using LostRPG_MonoGame.Interfaces;
     using LostRPG_MonoGame.Structure.Abilities;
 
-    public abstract class Unit : GameObject, IUnit, IMoveable, IRenderable
+    public abstract class Unit : GameObject, IUnit
     {
         protected const int GlobalCooldownInMS = 300;
 
