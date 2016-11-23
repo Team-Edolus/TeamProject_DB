@@ -197,7 +197,7 @@ namespace LostRPG_MonoGame.GameEngine
             }
         }
 
-        private void ApplyItemEffect(Item item, CharacterUnit player)
+        private void ApplyItemEffect(Item item, ICharacterUnit player)
         {
             item.ApplyItemEffects(player);
             this.painter.RedrawObjectWithAShield(player);                      

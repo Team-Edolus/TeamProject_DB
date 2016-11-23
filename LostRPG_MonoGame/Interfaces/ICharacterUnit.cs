@@ -2,7 +2,7 @@
 {
     using LostRPG_MonoGame.GameEngine;
 
-    public interface ICharacterUnit : IUnit
+    public interface ICharacterUnit : IUnit, IRenderable
     {
         void SetActiveAbility(string s);
         
