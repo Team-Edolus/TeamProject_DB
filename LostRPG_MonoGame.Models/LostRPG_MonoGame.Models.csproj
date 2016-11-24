@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0891179C-5C2A-4AE8-A96E-B8ABA7557130}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LostRPG_MonoGame.Models</RootNamespace>
+    <AssemblyName>LostRPG_MonoGame.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework, Version=3.6.0.1109, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TiledSharp, Version=0.15.5889.20321, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TiledSharp.0.15\lib\TiledSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Controllers\AbilityEventArgs.cs" />
+    <Compile Include="Controllers\ControllerUserInput.cs" />
+    <Compile Include="Controllers\NumericKeyEventArgs.cs" />
+    <Compile Include="GameEngine\CollisionHandler.cs" />
+    <Compile Include="GameEngine\Direction.cs" />
+    <Compile Include="GameEngine\DirectionEnum.cs" />
+    <Compile Include="GameEngine\Engine.cs" />
+    <Compile Include="GameEngine\GameStateInformation.cs" />
+    <Compile Include="GameEngine\RegionEntities.cs" />
+    <Compile Include="Graphics\GraphicsEngine.cs" />
+    <Compile Include="Graphics\PaintBrush.cs" />
+    <Compile Include="Graphics\SpriteType.cs" />
+    <Compile Include="Graphics\TextureBox.cs" />
+    <Compile Include="Graphics\TextureHandler.cs" />
+    <Compile Include="Interfaces\IAbility.cs" />
+    <Compile Include="Interfaces\IAbilityUseable.cs" />
+    <Compile Include="Interfaces\ICharacterUnit.cs" />
+    <Compile Include="Interfaces\ICooldownable.cs" />
+    <Compile Include="Interfaces\IGameObject.cs" />
+    <Compile Include="Interfaces\IGameStateInformation.cs" />
+    <Compile Include="Interfaces\IGraphicsEngine.cs" />
+    <Compile Include="Interfaces\IMeleeAttacking.cs" />
+    <Compile Include="Interfaces\IMoveable.cs" />
+    <Compile Include="Interfaces\IObstacleParser.cs" />
+    <Compile Include="Interfaces\IPaintInterface.cs" />
+    <Compile Include="Interfaces\IRegionInterface.cs" />
+    <Compile Include="Interfaces\IRenderable.cs" />
+    <Compile Include="Interfaces\ISpellCastable.cs" />
+    <Compile Include="Interfaces\ITextureBox.cs" />
+    <Compile Include="Interfaces\ITextureHandler.cs" />
+    <Compile Include="Interfaces\ITimeoutable.cs" />
+    <Compile Include="Interfaces\IUnit.cs" />
+    <Compile Include="Interfaces\IUserInputInterface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Static\TmxMapPaths.cs" />
+    <Compile Include="Structure\Abilities\Ability.cs" />
+    <Compile Include="Structure\Abilities\AbilityEffectEnum.cs" />
+    <Compile Include="Structure\Abilities\ActiveAbilityEnum.cs" />
+    <Compile Include="Structure\Abilities\BasicAttack.cs" />
+    <Compile Include="Structure\Abilities\Charge.cs" />
+    <Compile Include="Structure\Abilities\MeleeAbility.cs" />
+    <Compile Include="Structure\Abilities\Projectile.cs" />
+    <Compile Include="Structure\Abilities\ReactionTypeEnum.cs" />
+    <Compile Include="Structure\Abilities\Spell.cs" />
+    <Compile Include="Structure\BoostItems\Axe.cs" />
+    <Compile Include="Structure\BoostItems\Item.cs" />
+    <Compile Include="Structure\BoostItems\Pineapple.cs" />
+    <Compile Include="Structure\BoostItems\Shield.cs" />
+    <Compile Include="Structure\DisposableGameObject.cs" />
+    <Compile Include="Structure\Environment.cs" />
+    <Compile Include="Structure\GameObject.cs" />
+    <Compile Include="Structure\Gateway.cs" />
+    <Compile Include="Structure\Obstacle.cs" />
+    <Compile Include="Structure\Regions\MageHouseRegion.cs" />
+    <Compile Include="Structure\Regions\MageLayerRegion.cs" />
+    <Compile Include="Structure\Regions\ObstacleParser.cs" />
+    <Compile Include="Structure\Regions\Region.cs" />
+    <Compile Include="Structure\Regions\StartRegion.cs" />
+    <Compile Include="Structure\Regions\ValleyRegion.cs" />
+    <Compile Include="Structure\Structure.cs" />
+    <Compile Include="Structure\Units\Character\CharacterUnit.cs" />
+    <Compile Include="Structure\Units\Character\Ranger.cs" />
+    <Compile Include="Structure\Units\Character\Warrior.cs" />
+    <Compile Include="Structure\Units\Character\Wizard.cs" />
+    <Compile Include="Structure\Units\EnemyUnits\Boar1.cs" />
+    <Compile Include="Structure\Units\EnemyUnits\EnemyNPCUnit.cs" />
+    <Compile Include="Structure\Units\EnemyUnits\GiantCrab1.cs" />
+    <Compile Include="Structure\Units\FriendlyUnits\FriendlyNPCUnit.cs" />
+    <Compile Include="Structure\Units\FriendlyUnits\OldMage.cs" />
+    <Compile Include="Structure\Units\Unit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,12 +1,13 @@
-﻿namespace LostRPG_MonoGame
+﻿using LostRPG_MonoGame.Data.Interfaces;
+using LostRPG_MonoGame.Models.Controllers;
+using LostRPG_MonoGame.Models.GameEngine;
+using LostRPG_MonoGame.Models.Graphics;
+using LostRPG_MonoGame.Models.Interfaces;
+
+namespace LostRPG_MonoGame
 {
-    using LostRPG_MonoGame.Controllers;
-    using LostRPG_MonoGame.GameEngine;
-    using LostRPG_MonoGame.Graphics;
-    using LostRPG_MonoGame.Interfaces;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
-    using Microsoft.Xna.Framework.Input;
 
     /// <summary>
     /// This is the main type for your game.
@@ -23,14 +24,20 @@
 
         private Engine engine;
 
-        public Game1()
+        private IUnitOfWork unitOfWork;
+
+        private IGameStateInformation gameStateInformation;
+
+        public Game1(IUnitOfWork unitOfWork)
         {
             this.graphics = new GraphicsDeviceManager(this);
             this.Content.RootDirectory = "Content";
-            //this.graphics.IsFullScreen = true;
+            ////graphics.IsFullScreen = true;
             this.IsMouseVisible = true;
             this.graphics.PreferredBackBufferWidth = 1280;
             this.graphics.PreferredBackBufferHeight = 720;
+            this.unitOfWork = unitOfWork;
+            this.gameStateInformation = this.unitOfWork.GetGameStateInformation();
         }
 
         /// <summary>
@@ -58,7 +65,9 @@
             this.controller = new ControllerUserInput();
             ITextureHandler textureHandler = new TextureHandler(this.Content);
             IPaintInterface painter = new PaintBrush(textureHandler, this.graphicsEngine);
-            this.engine = new Engine(this.controller, painter);
+
+            this.engine = new Engine(this.controller, painter, this.gameStateInformation);
+
         }
 
         /// <summary>
