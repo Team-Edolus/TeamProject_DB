@@ -1,10 +1,4 @@
-﻿using System.Linq;
-using LostRPG_MonoGame.Data;
-using LostRPG_MonoGame.Data.Interfaces;
-using LostRPG_MonoGame.Data.Repositories;
-using LostRPG_MonoGame.Models.Structure.Units.Character;
-
-namespace LostRPG_MonoGame
+﻿namespace LostRPG_MonoGame
 {
     using System;
 
@@ -20,9 +14,7 @@ namespace LostRPG_MonoGame
         [STAThread]
         public static void Main()
         {
-            IUnitOfWork unitOfWork = new UnitOfWork();
-
-            using (var game = new Game1(unitOfWork))
+            using (var game = new Game1())
             {
                 game.Run();
             }

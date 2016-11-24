@@ -1,4 +1,4 @@
-﻿namespace LostRPG_MonoGame.Models.Resources.Static
+﻿namespace LostRPG_MonoGame.Resources.Static
 {
     public static class TmxMapPaths
     {
