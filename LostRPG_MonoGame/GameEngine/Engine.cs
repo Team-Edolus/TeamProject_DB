@@ -3,12 +3,14 @@ namespace LostRPG_MonoGame.GameEngine
 {
     using System;
     using System.Linq;
+    using LostRPG.Models.Dynamics;
+    using LostRPG.Models.Interfaces;
+    using LostRPG.Models.Structure;
+    using LostRPG.Models.Structure.Abilities;
+    using LostRPG.Models.Structure.BoostItems;
+    using LostRPG.Models.Structure.Units.Character;
     using LostRPG_MonoGame.Controllers;
     using LostRPG_MonoGame.Interfaces;
-    using LostRPG_MonoGame.Structure;
-    using LostRPG_MonoGame.Structure.Abilities;
-    using LostRPG_MonoGame.Structure.BoostItems;
-    using LostRPG_MonoGame.Structure.Units.Character;
     using Microsoft.Xna.Framework;
 
     public sealed class Engine

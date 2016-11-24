@@ -1,8 +1,8 @@
 ﻿namespace LostRPG_MonoGame.Interfaces
 {
     using System.Collections.Generic;
-    using LostRPG_MonoGame.Structure;
-    using LostRPG_MonoGame.Structure.Regions;
+    using LostRPG.Models.Structure;
+    using LostRPG_MonoGame.Regions;
 
     public interface IObstacleParser
     {

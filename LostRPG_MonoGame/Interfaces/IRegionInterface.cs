@@ -1,10 +1,11 @@
 ﻿namespace LostRPG_MonoGame.Interfaces
 {
     using System.Collections.Generic;
-    using LostRPG_MonoGame.Structure;
-    using LostRPG_MonoGame.Structure.BoostItems;
-    using LostRPG_MonoGame.Structure.Units.EnemyUnits;
-    using LostRPG_MonoGame.Structure.Units.FriendlyUnits;
+    using LostRPG.Models.Interfaces;
+    using LostRPG.Models.Structure;
+    using LostRPG.Models.Structure.BoostItems;
+    using LostRPG.Models.Structure.Units.EnemyUnits;
+    using LostRPG.Models.Structure.Units.FriendlyUnits;
 
     public interface IRegionInterface : IRenderable
     {

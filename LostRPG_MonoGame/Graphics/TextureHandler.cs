@@ -1,6 +1,7 @@
 ﻿namespace LostRPG_MonoGame.Graphics
 {
     using System;
+    using LostRPG.Models.Interfaces;
     using LostRPG_MonoGame.Interfaces;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;

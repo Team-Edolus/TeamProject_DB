@@ -1,0 +1,25 @@
+﻿namespace LostRPG.Models.Structure.Abilities
+{
+    using System;
+    using LostRPG.Models.Dynamics;
+    using LostRPG.Models.Interfaces;
+
+    /// <summary>
+    /// Spells, Arrows, etc..
+    /// </summary>
+    public abstract class Projectile : GameObject, IMoveable   // Make an interface?   // TODO: 
+    {
+        protected Projectile(int sizeX, int sizeY, int x, int y) : base(sizeX, sizeY, x, y)
+        {
+        }
+
+        public Direction Direction { get; set; }
+
+        public int MovementSpeed { get; }
+
+        public void Move()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

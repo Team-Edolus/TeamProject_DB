@@ -1,5 +1,7 @@
 ﻿namespace LostRPG_MonoGame.Interfaces
 {
+    using LostRPG.Models.Interfaces;
+
     public interface IPaintInterface
     {
         void AddObject(IRenderable renderableObject);

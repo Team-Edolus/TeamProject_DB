@@ -1,6 +1,7 @@
 ﻿namespace LostRPG_MonoGame.Graphics
 {
     using Interfaces;
+    using LostRPG.Models.Interfaces;
 
     public class PaintBrush : IPaintInterface
     {

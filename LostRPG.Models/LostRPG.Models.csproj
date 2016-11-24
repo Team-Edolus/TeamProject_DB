@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A107F451-13F4-403B-8F04-0717EDC8DEFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LostRPG.Models</RootNamespace>
+    <AssemblyName>LostRPG.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dynamics\Direction.cs" />
+    <Compile Include="Dynamics\DirectionEnum.cs" />
+    <Compile Include="Graphics\SpriteType.cs" />
+    <Compile Include="Interfaces\IAbility.cs" />
+    <Compile Include="Interfaces\IAbilityUseable.cs" />
+    <Compile Include="Interfaces\ICharacterUnit.cs" />
+    <Compile Include="Interfaces\ICooldownable.cs" />
+    <Compile Include="Interfaces\IGameObject.cs" />
+    <Compile Include="Interfaces\IMeleeAttacking.cs" />
+    <Compile Include="Interfaces\IMoveable.cs" />
+    <Compile Include="Interfaces\IRenderable.cs" />
+    <Compile Include="Interfaces\ISpellCastable.cs" />
+    <Compile Include="Interfaces\ITimeoutable.cs" />
+    <Compile Include="Interfaces\IUnit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionEntitiesDBM.cs" />
+    <Compile Include="Structure\Abilities\Ability.cs" />
+    <Compile Include="Structure\Abilities\AbilityEffectEnum.cs" />
+    <Compile Include="Structure\Abilities\ActiveAbilityEnum.cs" />
+    <Compile Include="Structure\Abilities\BasicAttack.cs" />
+    <Compile Include="Structure\Abilities\Charge.cs" />
+    <Compile Include="Structure\Abilities\MeleeAbility.cs" />
+    <Compile Include="Structure\Abilities\Projectile.cs" />
+    <Compile Include="Structure\Abilities\ReactionTypeEnum.cs" />
+    <Compile Include="Structure\Abilities\Spell.cs" />
+    <Compile Include="Structure\BoostItems\Axe.cs" />
+    <Compile Include="Structure\BoostItems\Item.cs" />
+    <Compile Include="Structure\BoostItems\Pineapple.cs" />
+    <Compile Include="Structure\BoostItems\Shield.cs" />
+    <Compile Include="Structure\DisposableGameObject.cs" />
+    <Compile Include="Structure\Environment.cs" />
+    <Compile Include="Structure\GameObject.cs" />
+    <Compile Include="Structure\Gateway.cs" />
+    <Compile Include="Structure\Obstacle.cs" />
+    <Compile Include="Structure\Structure.cs" />
+    <Compile Include="Structure\Units\Character\CharacterUnit.cs" />
+    <Compile Include="Structure\Units\Character\Ranger.cs" />
+    <Compile Include="Structure\Units\Character\Warrior.cs" />
+    <Compile Include="Structure\Units\Character\Wizard.cs" />
+    <Compile Include="Structure\Units\EnemyUnits\Boar1.cs" />
+    <Compile Include="Structure\Units\EnemyUnits\EnemyNPCUnit.cs" />
+    <Compile Include="Structure\Units\EnemyUnits\GiantCrab1.cs" />
+    <Compile Include="Structure\Units\FriendlyUnits\FriendlyNPCUnit.cs" />
+    <Compile Include="Structure\Units\FriendlyUnits\OldMage.cs" />
+    <Compile Include="Structure\Units\Unit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

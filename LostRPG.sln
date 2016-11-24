@@ -1,20 +1,52 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostRPG_MonoGame", "LostRPG_MonoGame\LostRPG_MonoGame.csproj", "{6FA8CA77-7710-4677-85E6-ECD59F71AF58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostRPG.Models", "LostRPG.Models\LostRPG.Models.csproj", "{A107F451-13F4-403B-8F04-0717EDC8DEFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostRPG.Data", "LostRPG.Data\LostRPG.Data.csproj", "{761D2289-9E98-4F8A-8E7F-CC3B6A06EB5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostRPG.Client", "LostRPG.Client\LostRPG.Client.csproj", "{40E08F61-BE21-4758-8161-A8F7CC54AA5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FA8CA77-7710-4677-85E6-ECD59F71AF58}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{6FA8CA77-7710-4677-85E6-ECD59F71AF58}.Debug|x86.ActiveCfg = Debug|x86
 		{6FA8CA77-7710-4677-85E6-ECD59F71AF58}.Debug|x86.Build.0 = Debug|x86
+		{6FA8CA77-7710-4677-85E6-ECD59F71AF58}.Release|Any CPU.ActiveCfg = Release|x86
 		{6FA8CA77-7710-4677-85E6-ECD59F71AF58}.Release|x86.ActiveCfg = Release|x86
 		{6FA8CA77-7710-4677-85E6-ECD59F71AF58}.Release|x86.Build.0 = Release|x86
+		{A107F451-13F4-403B-8F04-0717EDC8DEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A107F451-13F4-403B-8F04-0717EDC8DEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A107F451-13F4-403B-8F04-0717EDC8DEFD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A107F451-13F4-403B-8F04-0717EDC8DEFD}.Debug|x86.Build.0 = Debug|Any CPU
+		{A107F451-13F4-403B-8F04-0717EDC8DEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A107F451-13F4-403B-8F04-0717EDC8DEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A107F451-13F4-403B-8F04-0717EDC8DEFD}.Release|x86.ActiveCfg = Release|Any CPU
+		{A107F451-13F4-403B-8F04-0717EDC8DEFD}.Release|x86.Build.0 = Release|Any CPU
+		{761D2289-9E98-4F8A-8E7F-CC3B6A06EB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761D2289-9E98-4F8A-8E7F-CC3B6A06EB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761D2289-9E98-4F8A-8E7F-CC3B6A06EB5B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{761D2289-9E98-4F8A-8E7F-CC3B6A06EB5B}.Debug|x86.Build.0 = Debug|Any CPU
+		{761D2289-9E98-4F8A-8E7F-CC3B6A06EB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761D2289-9E98-4F8A-8E7F-CC3B6A06EB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761D2289-9E98-4F8A-8E7F-CC3B6A06EB5B}.Release|x86.ActiveCfg = Release|Any CPU
+		{761D2289-9E98-4F8A-8E7F-CC3B6A06EB5B}.Release|x86.Build.0 = Release|Any CPU
+		{40E08F61-BE21-4758-8161-A8F7CC54AA5A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{40E08F61-BE21-4758-8161-A8F7CC54AA5A}.Debug|x86.ActiveCfg = Debug|x86
+		{40E08F61-BE21-4758-8161-A8F7CC54AA5A}.Debug|x86.Build.0 = Debug|x86
+		{40E08F61-BE21-4758-8161-A8F7CC54AA5A}.Release|Any CPU.ActiveCfg = Release|x86
+		{40E08F61-BE21-4758-8161-A8F7CC54AA5A}.Release|x86.ActiveCfg = Release|x86
+		{40E08F61-BE21-4758-8161-A8F7CC54AA5A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
