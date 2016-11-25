@@ -3,7 +3,7 @@ using LostRPG_MonoGame.Models.Interfaces;
 
 namespace LostRPG_MonoGame.Models.Structure
 {
-    [Table("GameObject")]
+   // [Table("GameObject")]
     public abstract class GameObject : IGameObject
     {
         protected GameObject(int x, int y, int sizeX, int sizeY)

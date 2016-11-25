@@ -1,7 +1,9 @@
-﻿using LostRPG_MonoGame.Models.Graphics;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using LostRPG_MonoGame.Models.Graphics;
 
 namespace LostRPG_MonoGame.Models.Structure.Units.EnemyUnits
 {
+    [Table("Boar1")]
     public class Boar1 : EnemyNPCUnit
     {
         private const int Boar1SizeX = 39;
@@ -23,5 +25,12 @@ namespace LostRPG_MonoGame.Models.Structure.Units.EnemyUnits
         {
 
         }
+
+        public int Id { get; set; }
+        public string RegionName { get; set; } 
+
+        //nav property ne znam dali ima nujda ot nego, may niama!!!
+        public virtual EnemyNPCUnit EnemyUnit { get; set; }
+
     }
 }

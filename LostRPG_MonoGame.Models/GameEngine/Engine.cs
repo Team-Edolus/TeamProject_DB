@@ -172,6 +172,7 @@ namespace LostRPG_MonoGame.Models.GameEngine
                 if (this.DoIntersect(this.regionEntities.Player, friendlyNpcUnit))
                 {
                     colisionDetected = true;
+                
                     break;
                 }
             }

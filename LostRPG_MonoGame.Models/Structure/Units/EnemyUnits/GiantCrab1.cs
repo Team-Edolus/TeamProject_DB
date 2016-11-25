@@ -1,7 +1,9 @@
-﻿using LostRPG_MonoGame.Models.Graphics;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using LostRPG_MonoGame.Models.Graphics;
 
 namespace LostRPG_MonoGame.Models.Structure.Units.EnemyUnits
 {
+    [Table("GiantCrab1")]
     public class GiantCrab1 : EnemyNPCUnit
     {
         private const int GiantCrab1SizeX = 22;
@@ -23,5 +25,11 @@ namespace LostRPG_MonoGame.Models.Structure.Units.EnemyUnits
         {
 
         }
+
+        public int Id { get; set; }
+        public string RegionName { get; set; } 
+   
+        //nav property
+        public virtual EnemyNPCUnit EnemyUnit { get; set; }
     }
 }
