@@ -25,16 +25,12 @@ namespace LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits
 
         public FriendlyNPCUnit() : this(0, 0, 0, 0, 0)
         {
-            this.OldMages = new List<OldMage>();
+       
         }
-
-        public int Id { get; set; }
-   
+ 
         public string IColRegions { get; set; }
 
         public string UnitType { get; set; }
 
-        // nav property
-        public virtual ICollection<OldMage> OldMages { get; set; }
     }
 }

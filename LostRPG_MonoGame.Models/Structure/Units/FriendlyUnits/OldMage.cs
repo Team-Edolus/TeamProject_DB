@@ -18,8 +18,6 @@ namespace LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits
         {
         }
 
-        public int Id { get; set; }
-
         public string Name { get; set; }
 
         public string Region  { get; set; } 
@@ -28,7 +26,5 @@ namespace LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits
 
         public bool QuestCompleete { get; set; }
 
-        //not sure about this nav property, do we need it?
-        public virtual FriendlyNPCUnit FriendlyUnit { get; set; }
     }
 }

@@ -26,11 +26,7 @@ namespace LostRPG_MonoGame.Models.Structure.Units.EnemyUnits
 
         }
 
-        public int Id { get; set; }
         public string RegionName { get; set; } 
-
-        //nav property ne znam dali ima nujda ot nego, may niama!!!
-        public virtual EnemyNPCUnit EnemyUnit { get; set; }
 
     }
 }
