@@ -19,7 +19,6 @@ namespace LostRPG.Client.GameEngine
         private readonly IUserInputInterface controller;
         private readonly IPaintInterface painter;
         private readonly RegionEntities regionEntities;
-        private readonly IGameLoader gameLoader;
 
         private TimeSpan totalElapsedTime;
         
@@ -31,8 +30,6 @@ namespace LostRPG.Client.GameEngine
             ////
             RegionEntities.InstantiateClass(this, this.painter);
             this.regionEntities = RegionEntities.GetInstance();
-            ////
-            this.gameLoader = new GameLoader(new UnitOfWork(), this);
             ////
             this.SubscribeToController();
         }
@@ -200,8 +197,6 @@ namespace LostRPG.Client.GameEngine
             {
                 if (this.DoIntersect(this.regionEntities.Player, gateway))
                 {
-                    ////TODO: REMOVE THIS TEMP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                    this.gameLoader.SaveGame(this.totalElapsedTime.ToString());
                     gateway.TriggerAction();
                     break;
                 }

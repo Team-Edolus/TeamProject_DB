@@ -1,18 +1,24 @@
 ﻿// ReSharper disable PrivateFieldCanBeConvertedToLocalVariable
+
 namespace LostRPG.Client
 {
     using LostRPG.Client.Controllers;
     using LostRPG.Client.GameEngine;
     using LostRPG.Client.Graphics;
     using LostRPG.Client.Interfaces;
+    using LostRPG.Data.Repositories;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
+    using Microsoft.Xna.Framework.Input;
+    using QuakeConsole;
 
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
     public class LostRPGMain : Game
     {
+        private readonly ConsoleComponent console;
+
         private readonly GraphicsDeviceManager graphics;
 
         private SpriteBatch spriteBatch;
@@ -20,8 +26,15 @@ namespace LostRPG.Client
         private IGraphicsEngine graphicsEngine;
 
         private IUserInputInterface controller;
-
+        
         private Engine engine;
+
+        private IGameLoader gameLoader;
+
+        private ConsoleHandler consoleHandler;
+
+        private KeyboardState previousKeyboardState = Keyboard.GetState();
+        private KeyboardState currentKeyboardState;
 
         public LostRPGMain()
         {
@@ -31,6 +44,9 @@ namespace LostRPG.Client
             this.IsMouseVisible = true;
             this.graphics.PreferredBackBufferWidth = 1280;
             this.graphics.PreferredBackBufferHeight = 720;
+            ////
+            this.console = new ConsoleComponent(this);
+            this.Components.Add(this.console);
         }
 
         /// <summary>
@@ -59,6 +75,10 @@ namespace LostRPG.Client
             ITextureHandler textureHandler = new TextureHandler(this.Content);
             IPaintInterface painter = new PaintBrush(textureHandler, this.graphicsEngine);
             this.engine = new Engine(this.controller, painter);
+            ////
+            this.gameLoader = new GameLoader(new UnitOfWork(), this.engine);
+            this.consoleHandler = new ConsoleHandler(this.console, this.gameLoader);
+
         }
 
         /// <summary>
@@ -86,6 +106,15 @@ namespace LostRPG.Client
             this.controller.CheckForInput();
             this.engine.Update(gameTime);
             //// TODO: Add your update logic here
+            /// 
+            this.currentKeyboardState = Keyboard.GetState();
+            if (previousKeyboardState.IsKeyUp(Keys.F1) && currentKeyboardState.IsKeyDown(Keys.F1))
+            {
+                console.ToggleOpenClose();
+            }
+
+
+            this.previousKeyboardState = this.currentKeyboardState;
 
             base.Update(gameTime);
         }

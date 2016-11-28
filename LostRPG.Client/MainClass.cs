@@ -1,8 +1,6 @@
 ﻿namespace LostRPG.Client
 {
     using System;
-    using System.Data.Entity.ModelConfiguration;
-    using System.Diagnostics;
     using LostRPG.Data;
 
 #if WINDOWS || LINUX

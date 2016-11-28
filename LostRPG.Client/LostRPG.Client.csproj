@@ -43,6 +43,7 @@
     <Compile Include="Controllers\ControllerUserInput.cs" />
     <Compile Include="Controllers\NumericKeyEventArgs.cs" />
     <Compile Include="GameEngine\CollisionHandler.cs" />
+    <Compile Include="GameEngine\ConsoleHandler.cs" />
     <Compile Include="GameEngine\Engine.cs" />
     <Compile Include="GameEngine\GameLoader.cs" />
     <Compile Include="GameEngine\RegionEntities.cs" />
@@ -80,6 +81,14 @@
     </Reference>
     <Reference Include="MonoGame.Framework">
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.QuakeConsole, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.QuakeConsole.WindowsDX.1.1.2\lib\net45\MonoGame.QuakeConsole.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MonoGame.QuakeConsole.ManualInterpreter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.QuakeConsole.ManualInterpreter.WindowsDX.1.1.2-alpha\lib\net45\MonoGame.QuakeConsole.ManualInterpreter.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
