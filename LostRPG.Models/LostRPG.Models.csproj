@@ -43,20 +43,23 @@
   <ItemGroup>
     <Compile Include="Dynamics\Direction.cs" />
     <Compile Include="Dynamics\DirectionEnum.cs" />
+    <Compile Include="GameState\GameStateInfo.cs" />
     <Compile Include="Graphics\SpriteType.cs" />
     <Compile Include="Interfaces\IAbility.cs" />
     <Compile Include="Interfaces\IAbilityUseable.cs" />
     <Compile Include="Interfaces\ICharacterUnit.cs" />
     <Compile Include="Interfaces\ICooldownable.cs" />
     <Compile Include="Interfaces\IGameObject.cs" />
+    <Compile Include="Interfaces\IGameStateInfo.cs" />
     <Compile Include="Interfaces\IMeleeAttacking.cs" />
     <Compile Include="Interfaces\IMoveable.cs" />
     <Compile Include="Interfaces\IRenderable.cs" />
     <Compile Include="Interfaces\ISpellCastable.cs" />
     <Compile Include="Interfaces\ITimeoutable.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
+    <Compile Include="Interfaces\IRegionState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegionEntitiesDBM.cs" />
+    <Compile Include="GameState\RegionState.cs" />
     <Compile Include="Structure\Abilities\Ability.cs" />
     <Compile Include="Structure\Abilities\AbilityEffectEnum.cs" />
     <Compile Include="Structure\Abilities\ActiveAbilityEnum.cs" />

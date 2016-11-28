@@ -2,8 +2,8 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
     using LostRPG.Client.GameEngine;
-    using LostRPG.Client.Graphics;
     using LostRPG.Client.Interfaces;
     using LostRPG.Models.Graphics;
     using LostRPG.Models.Structure;
@@ -11,6 +11,7 @@
     using LostRPG.Models.Structure.Units.EnemyUnits;
     using LostRPG.Models.Structure.Units.FriendlyUnits;
 
+    [NotMapped]
     public abstract class Region<T> : GameObject, IRegionInterface
         where T : Region<T>, new()
     {

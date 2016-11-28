@@ -1,11 +1,14 @@
 ﻿namespace LostRPG.Models.Structure
 {
     using System;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     /// <summary>
     /// Used to load new regions.
     /// Collision-free
     /// </summary>
+
+    [NotMapped]
     public class Gateway : Environment
     {
         private readonly Action loadingAction;

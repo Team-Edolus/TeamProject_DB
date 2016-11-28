@@ -44,11 +44,13 @@
     <Compile Include="Controllers\NumericKeyEventArgs.cs" />
     <Compile Include="GameEngine\CollisionHandler.cs" />
     <Compile Include="GameEngine\Engine.cs" />
+    <Compile Include="GameEngine\GameLoader.cs" />
     <Compile Include="GameEngine\RegionEntities.cs" />
     <Compile Include="Graphics\GraphicsEngine.cs" />
     <Compile Include="Graphics\PaintBrush.cs" />
     <Compile Include="Graphics\TextureBox.cs" />
     <Compile Include="Graphics\TextureHandler.cs" />
+    <Compile Include="Interfaces\IGameLoader.cs" />
     <Compile Include="Interfaces\IGraphicsEngine.cs" />
     <Compile Include="Interfaces\IObstacleParser.cs" />
     <Compile Include="Interfaces\IPaintInterface.cs" />

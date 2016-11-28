@@ -18,6 +18,7 @@
         protected override void SetEnemies()
         {
             this.RegionEnemies.Add(new Boar1(250, 200));
+            this.RegionEnemies.Add(new Boar1(350, 400));
         }
 
         protected override void SetGateways()

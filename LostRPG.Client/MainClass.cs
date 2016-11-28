@@ -1,7 +1,10 @@
-﻿using System;
-
-namespace LostRPG.Client
+﻿namespace LostRPG.Client
 {
+    using System;
+    using System.Data.Entity.ModelConfiguration;
+    using System.Diagnostics;
+    using LostRPG.Data;
+
 #if WINDOWS || LINUX
     /// <summary>
     /// The main class.
@@ -14,6 +17,10 @@ namespace LostRPG.Client
         [STAThread]
         public static void Main()
         {
+            var context = new LostRPGDbContext();
+
+            context.Database.Initialize(true);
+            
             using (var game = new LostRPGMain())
                 game.Run();
         }

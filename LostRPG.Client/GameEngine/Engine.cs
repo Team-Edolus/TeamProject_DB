@@ -5,6 +5,7 @@ namespace LostRPG.Client.GameEngine
     using System.Linq;
     using LostRPG.Client.Controllers;
     using LostRPG.Client.Interfaces;
+    using LostRPG.Data.Repositories;
     using LostRPG.Models.Dynamics;
     using LostRPG.Models.Interfaces;
     using LostRPG.Models.Structure;
@@ -18,6 +19,7 @@ namespace LostRPG.Client.GameEngine
         private readonly IUserInputInterface controller;
         private readonly IPaintInterface painter;
         private readonly RegionEntities regionEntities;
+        private readonly IGameLoader gameLoader;
 
         private TimeSpan totalElapsedTime;
         
@@ -27,11 +29,16 @@ namespace LostRPG.Client.GameEngine
             this.painter = painter;
             this.totalElapsedTime = TimeSpan.Zero;
             ////
-            RegionEntities.IntantiateClass(this, this.painter);
+            RegionEntities.InstantiateClass(this, this.painter);
             this.regionEntities = RegionEntities.GetInstance();
+            ////
+            this.gameLoader = new GameLoader(new UnitOfWork(), this);
             ////
             this.SubscribeToController();
         }
+
+        //TEMP?
+        public RegionEntities RegionEntities => this.regionEntities;
 
         public void Update(GameTime gameTime)
         {
@@ -193,6 +200,8 @@ namespace LostRPG.Client.GameEngine
             {
                 if (this.DoIntersect(this.regionEntities.Player, gateway))
                 {
+                    ////TODO: REMOVE THIS TEMP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    this.gameLoader.SaveGame(this.totalElapsedTime.ToString());
                     gateway.TriggerAction();
                     break;
                 }

@@ -55,6 +55,7 @@
             int abilitySizeY;
             int abilityVisualX;
             int abilityVisualY;
+
             switch (direction)
             {
                 case DirectionEnum.East:

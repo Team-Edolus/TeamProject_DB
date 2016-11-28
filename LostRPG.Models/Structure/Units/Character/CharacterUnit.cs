@@ -2,6 +2,7 @@
 {
     using System;
     using LostRPG.Models.Dynamics;
+    using LostRPG.Models.GameState;
     using LostRPG.Models.Graphics;
     using LostRPG.Models.Interfaces;
     using LostRPG.Models.Structure.Abilities;
@@ -15,7 +16,18 @@
             this.ActiveAbility = ActiveAbilityEnum.FirstAbility;
         }
 
+        ////EF:
+        
+        //public int SafeId { get; set; }
+
+        //[ForeignKey("SafeId")]
+        public GameStateInfo GameStateInfo { get; set; }
+
         protected ActiveAbilityEnum ActiveAbility { get; private set; }
+
+        public int Level { get; set; }
+
+        public int ExperiencePoints { get; set; }
 
         public void SetActiveAbility(string s)
         {

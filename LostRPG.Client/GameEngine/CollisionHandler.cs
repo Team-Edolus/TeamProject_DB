@@ -2,6 +2,6 @@
 {
     public class CollisionHandler
     {
-        ////TODO
+        ////TODO: Exctract the collision logic from the engine to process it separately.
     }
 }

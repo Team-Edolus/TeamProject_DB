@@ -1,7 +1,9 @@
 ﻿namespace LostRPG.Models.Structure.Abilities
 {
+    using System.ComponentModel.DataAnnotations.Schema;
     using LostRPG.Models.Interfaces;
 
+    [NotMapped]
     public abstract class Ability : GameObject, IAbility, ITimeoutable
     {
         ////private int maxLifespanInMS;

@@ -44,7 +44,7 @@
 
         public List<Item> Items { get; private set; }
 
-        public static void IntantiateClass(Engine engine, IPaintInterface painter)
+        public static void InstantiateClass(Engine engine, IPaintInterface painter)
         {
             _instance = new RegionEntities(engine, painter);
             _instance.SetupFirstRegion();
@@ -58,6 +58,11 @@
             }
 
             return _instance;
+        }
+
+        public string GetCurrentRegionName()
+        {
+            return this.currentRegion.GetType().Name;
         }
 
         public void InitialiseNewRegion(IRegionInterface newRegion)
@@ -110,49 +115,32 @@
                 this.painter.RemoveObject(item);
             }
 
+            foreach (var ability in this.Abilities)
+            {
+                if (ability is IRenderable)
+                {
+                    this.painter.RemoveObject(ability as IRenderable);
+                }
+            }
+
             this.painter.RemoveObject(this.currentRegion); // (background)
         }
 
         private void LoadRegionEntities()
         {
-            this.FriendlyNPCs = new List<FriendlyNPCUnit>();
-            this.Enemies = new List<EnemyNPCUnit>();
-            this.Obstacles = new List<Obstacle>();
+            this.FriendlyNPCs = this.currentRegion.RegionFriendlyNPCs;
+            this.Enemies = this.currentRegion.RegionEnemies;
+            this.Obstacles = this.currentRegion.RegionObstacles;
+            this.Gateways = this.currentRegion.RegionGateways;
+            this.Items = this.currentRegion.RegionItems;
             this.Abilities = new List<Ability>();
-            this.Gateways = new List<Gateway>();
-            this.Items = new List<Item>();
-
-            foreach (var regionFriendlyNpC in this.currentRegion.RegionFriendlyNPCs)
-            {
-                this.FriendlyNPCs.Add(regionFriendlyNpC);
-            }
-
-            foreach (var enemy in this.currentRegion.RegionEnemies)
-            {
-                this.Enemies.Add(enemy);
-            }
-
-            foreach (var regionGateway in this.currentRegion.RegionGateways)
-            {
-                this.Gateways.Add(regionGateway);
-            }
-
-            foreach (var regionObstacle in this.currentRegion.RegionObstacles)
-            {
-                this.Obstacles.Add(regionObstacle);
-            }
-
-            foreach (var item in this.currentRegion.RegionItems)
-            {
-                this.Items.Add(item);
-            }
         }
 
         private void SetupFirstRegion()
         {
-            ////this.currentRegion = MageLayerRegion.Instance;
+            ////this.currentRegion = MageLayerRegion.GetInstance;
             this.currentRegion = StartRegion.GetInstance;
-            this.Player = new Warrior(1000, 400);
+            this.Player = new Warrior(1000, 350);
             this.LoadRegionEntities();
             this.AddNewGraphicObjects();
         }
