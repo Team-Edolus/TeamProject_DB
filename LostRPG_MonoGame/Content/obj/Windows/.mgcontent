@@ -4,22 +4,22 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/Character_16x24.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/AxeDefault.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/background_720p.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/bg.jpg</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/Boar_39x24.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/burger32x32.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/crab1_22x16.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/edolus.ico</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/guy.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/mageHouseRegion_v1_720p.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/mageLayerRegion_v1_720p.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/oldMageNPC_30x33.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/pineapple35x32.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/shield32x32.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/startRegion_v1_720p.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/Sword_6x16.png</File>
-    <File>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/valleyRegion_v1_720p.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/Character_16x24.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/AxeDefault.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/background_720p.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/bg.jpg</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/Boar_39x24.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/burger32x32.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/crab1_22x16.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/edolus.ico</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/guy.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/mageHouseRegion_v1_720p.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/mageLayerRegion_v1_720p.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/oldMageNPC_30x33.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/pineapple35x32.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/shield32x32.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/startRegion_v1_720p.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/Sword_6x16.png</File>
+    <File>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/valleyRegion_v1_720p.png</File>
   </SourceFiles>
 </SourceFileCollection>

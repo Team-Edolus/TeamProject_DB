@@ -13,21 +13,10 @@
     using LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits;
     public interface IUnitOfWork
     {
-        IGameStateInformation GetGameStateInformation();
-
         IRepository<GameObject> GameObjects { get; }
 
-        IRepository<Unit> Units { get; }
+        IGameStateInformation GetGameStateInformation();
 
-        IRepository<EnemyNPCUnit> EnemyNPCUnits { get; }
-
-        IRepository<Boar1> Boars { get; }
-        IRepository<GiantCrab1> Giantcrabs { get; }
-
-        IRepository<FriendlyNPCUnit> FriendlyNPCUnits { get; }
-
-        IRepository<OldMage> OldMages { get; }
-     
         void RecordTheLastGameState(IGameStateInformation information);
 
         void Save();

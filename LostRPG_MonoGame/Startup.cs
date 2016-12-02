@@ -21,6 +21,7 @@
         {
             IUnitOfWork unitOfWork = new UnitOfWork();
 
+            unitOfWork.GameObjects.GetById(1);
             using (var game = new Game1(unitOfWork))
             {
                 game.Run();

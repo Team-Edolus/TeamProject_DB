@@ -7,7 +7,7 @@
     using LostRPG_MonoGame.Models.Interfaces;
     using LostRPG_MonoGame.Models.Structure.Abilities;
 
-    [Table("Unit")]
+    [Table("Units")]
     public abstract class Unit : GameObject, IUnit
     {
         protected const int GlobalCooldownInMS = 300;
