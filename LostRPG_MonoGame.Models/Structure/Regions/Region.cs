@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using LostRPG_MonoGame.Models.GameEngine;
-using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Interfaces;
-using LostRPG_MonoGame.Models.Structure.BoostItems;
-using LostRPG_MonoGame.Models.Structure.Units.EnemyUnits;
-using LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits;
-
-namespace LostRPG_MonoGame.Models.Structure.Regions
+﻿namespace LostRPG_MonoGame.Models.Structure.Regions
 {
+    using System;
+    using System.Collections.Generic;
+    using LostRPG_MonoGame.Models.GameEngine;
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using LostRPG_MonoGame.Models.Structure.BoostItems;
+    using LostRPG_MonoGame.Models.Structure.Units.EnemyUnits;
+    using LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits;
     public abstract class Region<T> : GameObject, IRegionInterface
         where T : Region<T>, new()
     {

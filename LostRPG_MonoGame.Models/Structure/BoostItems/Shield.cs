@@ -1,7 +1,6 @@
-﻿using LostRPG_MonoGame.Models.Graphics;
-
-namespace LostRPG_MonoGame.Models.Structure.BoostItems
+﻿namespace LostRPG_MonoGame.Models.Structure.BoostItems
 {
+    using LostRPG_MonoGame.Models.Graphics;
     public class Shield : Item
     {
         private const int ShieldDefaultDamageBoost = 0;

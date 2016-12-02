@@ -1,8 +1,8 @@
-﻿using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Interfaces;
-
-namespace LostRPG_MonoGame.Models.Structure
+﻿namespace LostRPG_MonoGame.Models.Structure
 {
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Interfaces;
+
     public class Structure : Environment, IRenderable // TODO
     {
         public Structure(int x, int y, int sizeX, int sizeY) 

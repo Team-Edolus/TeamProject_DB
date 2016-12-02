@@ -1,7 +1,6 @@
-﻿ using LostRPG_MonoGame.Models.Interfaces;
-
-namespace LostRPG_MonoGame.Models.Structure.Abilities
+﻿ namespace LostRPG_MonoGame.Models.Structure.Abilities
 {
+    using LostRPG_MonoGame.Models.Interfaces;
     public class Charge : MeleeAbility
     {
         private const int ChargeVisualX = 0;

@@ -1,17 +1,15 @@
 ﻿//// ReSharper disable MemberCanBeMadeStatic.Local
-
-using System;
-using System.Linq;
-using LostRPG_MonoGame.Models.Controllers;
-using LostRPG_MonoGame.Models.Interfaces;
-using LostRPG_MonoGame.Models.Structure;
-using LostRPG_MonoGame.Models.Structure.Abilities;
-using LostRPG_MonoGame.Models.Structure.BoostItems;
-using LostRPG_MonoGame.Models.Structure.Units.Character;
-using Microsoft.Xna.Framework;
-
 namespace LostRPG_MonoGame.Models.GameEngine
 {
+    using System;
+    using System.Linq;
+    using LostRPG_MonoGame.Models.Controllers;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using LostRPG_MonoGame.Models.Structure;
+    using LostRPG_MonoGame.Models.Structure.Abilities;
+    using LostRPG_MonoGame.Models.Structure.BoostItems;
+    using LostRPG_MonoGame.Models.Structure.Units.Character;
+    using Microsoft.Xna.Framework;
     public sealed class Engine
     {
         private readonly IUserInputInterface controller;

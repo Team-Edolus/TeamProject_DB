@@ -1,12 +1,10 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
-using LostRPG_MonoGame.Models.GameEngine;
-using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Interfaces;
-using LostRPG_MonoGame.Models.Structure.Abilities;
-
-namespace LostRPG_MonoGame.Models.Structure.Units.Character
+﻿namespace LostRPG_MonoGame.Models.Structure.Units.Character
 {
+    using System;
+    using LostRPG_MonoGame.Models.GameEngine;
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using LostRPG_MonoGame.Models.Structure.Abilities;
     public class Warrior : CharacterUnit, IMeleeAttacking
     {
         private const int WarriorSizeX = 16;

@@ -1,7 +1,6 @@
-﻿using LostRPG_MonoGame.Models.Structure.Abilities;
-
-namespace LostRPG_MonoGame.Models.Interfaces
+﻿namespace LostRPG_MonoGame.Models.Interfaces
 {
+    using LostRPG_MonoGame.Models.Structure.Abilities;
     public interface IAbility
     {
         int VisualX { get; }

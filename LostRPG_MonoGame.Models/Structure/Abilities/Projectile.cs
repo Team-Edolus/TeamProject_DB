@@ -1,9 +1,9 @@
-﻿using System;
-using LostRPG_MonoGame.Models.GameEngine;
-using LostRPG_MonoGame.Models.Interfaces;
-
-namespace LostRPG_MonoGame.Models.Structure.Abilities
+﻿namespace LostRPG_MonoGame.Models.Structure.Abilities
 {
+    using System;
+    using LostRPG_MonoGame.Models.GameEngine;
+    using LostRPG_MonoGame.Models.Interfaces;
+
     /// <summary>
     /// Spells, Arrows, etc..
     /// </summary>

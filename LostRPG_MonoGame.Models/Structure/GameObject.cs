@@ -1,9 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using LostRPG_MonoGame.Models.Interfaces;
-
-namespace LostRPG_MonoGame.Models.Structure
+﻿namespace LostRPG_MonoGame.Models.Structure
 {
-   // [Table("GameObject")]
+    using LostRPG_MonoGame.Models.Interfaces;
+
+    //parent!!!
     public abstract class GameObject : IGameObject
     {
         protected GameObject(int x, int y, int sizeX, int sizeY)

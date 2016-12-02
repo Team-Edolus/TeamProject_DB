@@ -1,9 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Structure.Regions;
-
-namespace LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits
+﻿namespace LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits
 {
+    using System.ComponentModel.DataAnnotations.Schema;
+    using LostRPG_MonoGame.Models.Graphics;
     [Table("OldMage")]
     public class OldMage : FriendlyNPCUnit
     {

@@ -1,8 +1,7 @@
-﻿using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Structure.Units.EnemyUnits;
-
-namespace LostRPG_MonoGame.Models.Structure.Regions
+﻿namespace LostRPG_MonoGame.Models.Structure.Regions
 {
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Structure.Units.EnemyUnits;
     public class ValleyRegion : Region<ValleyRegion>
     {
         public ValleyRegion() : base()

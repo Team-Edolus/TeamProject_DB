@@ -1,7 +1,6 @@
-﻿using Microsoft.Xna.Framework;
-
-namespace LostRPG_MonoGame.Models.Interfaces
+﻿namespace LostRPG_MonoGame.Models.Interfaces
 {
+    using Microsoft.Xna.Framework;
     public interface IGraphicsEngine
     {
         void RedrawAll(GameTime gameTime);

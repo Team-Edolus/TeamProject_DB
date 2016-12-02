@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace LostRPG_MonoGame.Models.Interfaces
+﻿namespace LostRPG_MonoGame.Models.Interfaces
 {
+    using System;
     public interface IUserInputInterface
     {
         event EventHandler OnRightPressed;

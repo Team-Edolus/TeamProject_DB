@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LostRPG_MonoGame.Data.Interfaces;
-using LostRPG_MonoGame.Models.Interfaces;
-using LostRPG_MonoGame.Models.Structure;
-using LostRPG_MonoGame.Models.Structure.Units;
-using LostRPG_MonoGame.Models.Structure.Units.Character;
-using LostRPG_MonoGame.Models.Structure.Units.EnemyUnits;
-using LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits;
-
-namespace LostRPG_MonoGame.Data.Repositories
+﻿namespace LostRPG_MonoGame.Data.Repositories
 {
+    using LostRPG_MonoGame.Data.Interfaces;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using LostRPG_MonoGame.Models.Structure;
+    using LostRPG_MonoGame.Models.Structure.Units;
+    using LostRPG_MonoGame.Models.Structure.Units.EnemyUnits;
+    using LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits;
     public class UnitOfWork : IUnitOfWork
     {
         private readonly LostRPGContext context;

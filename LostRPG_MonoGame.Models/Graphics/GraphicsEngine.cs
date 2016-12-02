@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using LostRPG_MonoGame.Models.Interfaces;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-
-namespace LostRPG_MonoGame.Models.Graphics
+﻿namespace LostRPG_MonoGame.Models.Graphics
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
     public class GraphicsEngine : IGraphicsEngine
     {
         private readonly ISet<ITextureBox> textureBoxes;

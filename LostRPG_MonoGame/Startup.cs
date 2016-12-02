@@ -1,12 +1,11 @@
-﻿using System.Linq;
-using LostRPG_MonoGame.Data;
-using LostRPG_MonoGame.Data.Interfaces;
-using LostRPG_MonoGame.Data.Repositories;
-using LostRPG_MonoGame.Models.Structure.Units.Character;
-
-namespace LostRPG_MonoGame
+﻿namespace LostRPG_MonoGame
 {
     using System;
+    using System.Linq;
+    using LostRPG_MonoGame.Data;
+    using LostRPG_MonoGame.Data.Interfaces;
+    using LostRPG_MonoGame.Data.Repositories;
+    using LostRPG_MonoGame.Models.Structure.Units.Character;
 
 #if WINDOWS || LINUX
     /// <summary>

@@ -1,8 +1,7 @@
-﻿using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits;
-
-namespace LostRPG_MonoGame.Models.Structure.Regions
+﻿namespace LostRPG_MonoGame.Models.Structure.Regions
 {
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits;
     public class MageHouseRegion : Region<MageHouseRegion>
     {
         public MageHouseRegion() : base()

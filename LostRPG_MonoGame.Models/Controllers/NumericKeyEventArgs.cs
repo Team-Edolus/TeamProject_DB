@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace LostRPG_MonoGame.Models.Controllers
+﻿namespace LostRPG_MonoGame.Models.Controllers
 {
+    using System;
     public class NumericKeyEventArgs : EventArgs
     {
         public NumericKeyEventArgs(string numericValue)

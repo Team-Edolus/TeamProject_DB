@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/Sword_6x16.png</SourceFile>
-  <SourceTime>2016-11-28T10:38:26.641908+01:00</SourceTime>
+  <SourceTime>2016-12-02T17:45:50.9325363+01:00</SourceTime>
   <DestFile>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/bin/Windows/Sword_6x16.xnb</DestFile>
-  <DestTime>2016-11-28T10:41:39.1004996+01:00</DestTime>
+  <DestTime>2016-12-02T17:51:49.2877293+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-03-30T08:36:08+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/crab1_22x16.png</SourceFile>
-  <SourceTime>2016-11-28T10:38:26.6489192+01:00</SourceTime>
+  <SourceTime>2016-12-02T17:45:51.2798591+01:00</SourceTime>
   <DestFile>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/bin/Windows/crab1_22x16.xnb</DestFile>
-  <DestTime>2016-11-28T10:41:38.4958083+01:00</DestTime>
+  <DestTime>2016-12-02T17:51:47.1904786+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-03-30T08:36:08+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

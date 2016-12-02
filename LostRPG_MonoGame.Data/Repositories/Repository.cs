@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using LostRPG_MonoGame.Data.Interfaces;
-
-namespace LostRPG_MonoGame.Data.Repositories
+﻿namespace LostRPG_MonoGame.Data.Repositories
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using LostRPG_MonoGame.Data.Interfaces;
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly LostRPGContext context;

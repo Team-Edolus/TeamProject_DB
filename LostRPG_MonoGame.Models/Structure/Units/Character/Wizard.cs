@@ -1,7 +1,6 @@
-﻿using LostRPG_MonoGame.Models.Graphics;
-
-namespace LostRPG_MonoGame.Models.Structure.Units.Character
+﻿namespace LostRPG_MonoGame.Models.Structure.Units.Character
 {
+    using LostRPG_MonoGame.Models.Graphics;
     public class Wizard : CharacterUnit // TODO
     {
         public Wizard(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 

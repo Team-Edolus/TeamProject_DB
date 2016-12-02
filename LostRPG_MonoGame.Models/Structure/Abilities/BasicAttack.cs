@@ -1,12 +1,11 @@
-﻿using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Interfaces;
-
-namespace LostRPG_MonoGame.Models.Structure.Abilities
+﻿namespace LostRPG_MonoGame.Models.Structure.Abilities
 {
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Interfaces;
+
     public class BasicAttack : MeleeAbility, IRenderable
     {
         public const int BasicAttackMaxLifespanInMS = 500;
-        
         protected const int BasicAttackVisualSizeX = 6; 
         protected const int BasicAttackVisualSizeY = 16;
         protected const int BasicAttackPower = 60;

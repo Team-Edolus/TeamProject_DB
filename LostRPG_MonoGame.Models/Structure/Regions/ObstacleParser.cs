@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using LostRPG_MonoGame.Models.Interfaces;
-using LostRPG_MonoGame.Models.Resources.Static;
-using TiledSharp;
-
-namespace LostRPG_MonoGame.Models.Structure.Regions
+﻿namespace LostRPG_MonoGame.Models.Structure.Regions
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using LostRPG_MonoGame.Models.Resources.Static;
+    using TiledSharp;
     public class ObstacleParser : IObstacleParser
     {
         private TmxMap currentMap;

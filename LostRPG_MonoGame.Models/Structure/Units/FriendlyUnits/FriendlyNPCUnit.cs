@@ -1,11 +1,9 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq.Expressions;
-using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Structure.Regions;
-
-namespace LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits
+﻿namespace LostRPG_MonoGame.Models.Structure.Units.FriendlyUnits
 {
+
+    using System.ComponentModel.DataAnnotations.Schema;
+    using LostRPG_MonoGame.Models.Graphics;
+
     [Table("FriendlyNPCUnit")]
     public class FriendlyNPCUnit : Unit
     {

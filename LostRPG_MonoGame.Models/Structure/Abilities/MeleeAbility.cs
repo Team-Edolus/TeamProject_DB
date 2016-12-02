@@ -1,7 +1,6 @@
-﻿using LostRPG_MonoGame.Models.Interfaces;
-
-namespace LostRPG_MonoGame.Models.Structure.Abilities
+﻿namespace LostRPG_MonoGame.Models.Structure.Abilities
 {
+    using LostRPG_MonoGame.Models.Interfaces;
     public abstract class MeleeAbility : Ability
     {
         protected MeleeAbility(int x, int y, int sizeX, int sizeY, int visualX, int visualY, 

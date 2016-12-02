@@ -1,9 +1,9 @@
-﻿using System;
-using LostRPG_MonoGame.Models.Interfaces;
-using Microsoft.Xna.Framework.Input;
-
-namespace LostRPG_MonoGame.Models.Controllers
+﻿namespace LostRPG_MonoGame.Models.Controllers
 {
+    using System;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using Microsoft.Xna.Framework.Input;
+
     public class ControllerUserInput : IUserInputInterface
     {
         private MouseState previousMouseState;

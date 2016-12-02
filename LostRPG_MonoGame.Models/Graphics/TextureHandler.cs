@@ -1,10 +1,9 @@
-﻿using System;
-using LostRPG_MonoGame.Models.Interfaces;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
-
-namespace LostRPG_MonoGame.Models.Graphics
+﻿namespace LostRPG_MonoGame.Models.Graphics
 {
+    using System;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using Microsoft.Xna.Framework.Content;
+    using Microsoft.Xna.Framework.Graphics;
     public class TextureHandler : ITextureHandler
     {
         private Texture2D startRegionBGImage;

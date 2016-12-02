@@ -1,8 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using LostRPG_MonoGame.Models.Graphics;
-
-namespace LostRPG_MonoGame.Models.Structure.Units.Character
+﻿namespace LostRPG_MonoGame.Models.Structure.Units.Character
 {
+    using LostRPG_MonoGame.Models.Graphics;
     public class Ranger : CharacterUnit // TODO
     {
         public Ranger(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 

@@ -1,12 +1,10 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
-using LostRPG_MonoGame.Models.GameEngine;
-using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Interfaces;
-using LostRPG_MonoGame.Models.Structure.Abilities;
-
-namespace LostRPG_MonoGame.Models.Structure.Units.Character
+﻿namespace LostRPG_MonoGame.Models.Structure.Units.Character
 {
+    using System;
+    using LostRPG_MonoGame.Models.GameEngine;
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using LostRPG_MonoGame.Models.Structure.Abilities;
     public abstract class CharacterUnit : Unit, ICharacterUnit, IAbilityUseable
     {
         protected CharacterUnit(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 

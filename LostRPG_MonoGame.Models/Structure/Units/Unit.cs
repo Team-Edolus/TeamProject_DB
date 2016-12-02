@@ -1,12 +1,12 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
-using LostRPG_MonoGame.Models.GameEngine;
-using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Interfaces;
-using LostRPG_MonoGame.Models.Structure.Abilities;
-
-namespace LostRPG_MonoGame.Models.Structure.Units
+﻿namespace LostRPG_MonoGame.Models.Structure.Units
 {
+    using System;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using LostRPG_MonoGame.Models.GameEngine;
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Interfaces;
+    using LostRPG_MonoGame.Models.Structure.Abilities;
+
     [Table("Unit")]
     public abstract class Unit : GameObject, IUnit
     {

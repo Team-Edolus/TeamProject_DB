@@ -1,7 +1,6 @@
-﻿using LostRPG_MonoGame.Models.Interfaces;
-
-namespace LostRPG_MonoGame.Models.Graphics
+﻿namespace LostRPG_MonoGame.Models.Graphics
 {
+    using LostRPG_MonoGame.Models.Interfaces;
     public class PaintBrush : IPaintInterface
     {
         private readonly ITextureHandler textureHandler;

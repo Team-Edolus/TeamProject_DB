@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using LostRPG_MonoGame.Models.Graphics;
-
-namespace LostRPG_MonoGame.Models.Structure.Units.EnemyUnits
+﻿namespace LostRPG_MonoGame.Models.Structure.Units.EnemyUnits
 {
+    using System.ComponentModel.DataAnnotations.Schema;
+    using LostRPG_MonoGame.Models.Graphics;
+
     [Table("Boar1")]
     public class Boar1 : EnemyNPCUnit
     {

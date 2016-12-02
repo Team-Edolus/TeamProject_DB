@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace LostRPG_MonoGame.Models.Structure
+﻿namespace LostRPG_MonoGame.Models.Structure
 {
+    using System;
     /// <summary>
     /// Used to load new regions.
     /// Collision-free

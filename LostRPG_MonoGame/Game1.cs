@@ -1,13 +1,12 @@
-﻿using LostRPG_MonoGame.Data.Interfaces;
-using LostRPG_MonoGame.Models.Controllers;
-using LostRPG_MonoGame.Models.GameEngine;
-using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Interfaces;
-
-namespace LostRPG_MonoGame
+﻿namespace LostRPG_MonoGame
 {
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
+    using LostRPG_MonoGame.Data.Interfaces;
+    using LostRPG_MonoGame.Models.Controllers;
+    using LostRPG_MonoGame.Models.GameEngine;
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Interfaces;
 
     /// <summary>
     /// This is the main type for your game.

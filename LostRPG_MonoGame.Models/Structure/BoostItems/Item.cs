@@ -1,8 +1,7 @@
-﻿using LostRPG_MonoGame.Models.Graphics;
-using LostRPG_MonoGame.Models.Interfaces;
-
-namespace LostRPG_MonoGame.Models.Structure.BoostItems
+﻿namespace LostRPG_MonoGame.Models.Structure.BoostItems
 {
+    using LostRPG_MonoGame.Models.Graphics;
+    using LostRPG_MonoGame.Models.Interfaces;
     public abstract class Item : GameObject, IRenderable
     {
         protected Item(int x, int y, int sizeX, int sizeY, int healthBoost, 

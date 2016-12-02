@@ -1,7 +1,6 @@
-﻿using LostRPG_MonoGame.Models.GameEngine;
-
-namespace LostRPG_MonoGame.Models.Interfaces
+﻿namespace LostRPG_MonoGame.Models.Interfaces
 {
+    using LostRPG_MonoGame.Models.GameEngine;
     public interface IMoveable
     {
         Direction Direction { get; set; }

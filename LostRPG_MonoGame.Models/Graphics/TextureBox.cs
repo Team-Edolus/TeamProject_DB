@@ -1,9 +1,8 @@
-﻿using LostRPG_MonoGame.Models.Interfaces;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-
-namespace LostRPG_MonoGame.Models.Graphics
+﻿namespace LostRPG_MonoGame.Models.Graphics
 {
+    using LostRPG_MonoGame.Models.Interfaces;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
     public class TextureBox : ITextureBox
     {
         public TextureBox(Texture2D texture, IRenderable parentObject)
