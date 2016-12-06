@@ -100,3 +100,6 @@ D:\TheBestRepo\TeamProject_DB\LostRPG_MonoGame\bin\Windows\x86\Debug\SharpDX.Dir
 D:\TheBestRepo\TeamProject_DB\LostRPG_MonoGame\bin\Windows\x86\Debug\SharpDX.XInput.xml
 D:\TheBestRepo\TeamProject_DB\LostRPG_MonoGame\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 D:\TheBestRepo\TeamProject_DB\LostRPG_MonoGame\obj\x86\Debug\LostRPG_MonoGame.csprojResolveAssemblyReference.cache
+C:\Users\tedi\Documents\GitHub\TeamProject_DB\LostRPG_MonoGame\bin\Windows\x86\Debug\LostRPG_MonoGame.exe.config
+C:\Users\tedi\Documents\GitHub\TeamProject_DB\LostRPG_MonoGame\obj\x86\Debug\LostRPG_MonoGame.exe
+C:\Users\tedi\Documents\GitHub\TeamProject_DB\LostRPG_MonoGame\obj\x86\Debug\LostRPG_MonoGame.pdb

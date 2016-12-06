@@ -1,6 +1,9 @@
 ﻿namespace LostRPG_MonoGame.Models.Structure.Units.Character
 {
     using LostRPG_MonoGame.Models.Graphics;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    [Table("Wizard")]
     public class Wizard : CharacterUnit // TODO
     {
         public Wizard(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 

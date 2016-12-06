@@ -5,6 +5,9 @@
     using LostRPG_MonoGame.Models.Graphics;
     using LostRPG_MonoGame.Models.Interfaces;
     using LostRPG_MonoGame.Models.Structure.Abilities;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    [Table("Warrior")]
     public class Warrior : CharacterUnit, IMeleeAttacking
     {
         private const int WarriorSizeX = 16;

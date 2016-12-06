@@ -5,6 +5,9 @@
     using LostRPG_MonoGame.Models.Graphics;
     using LostRPG_MonoGame.Models.Interfaces;
     using LostRPG_MonoGame.Models.Structure.Abilities;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    [Table("CharacterUnit")]
     public abstract class CharacterUnit : Unit, ICharacterUnit, IAbilityUseable
     {
         protected CharacterUnit(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 
