@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/mageLayerRegion_v1_720p.png</SourceFile>
-  <SourceTime>2016-12-02T21:05:18.7401687+02:00</SourceTime>
-  <DestFile>D:/TheBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/bin/Windows/mageLayerRegion_v1_720p.xnb</DestFile>
-  <DestTime>2016-12-02T21:09:42.7702704+02:00</DestTime>
+  <SourceFile>D:/TheAbsolutelyBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/mageLayerRegion_v1_720p.png</SourceFile>
+  <SourceTime>2016-12-06T18:03:32.5454052+02:00</SourceTime>
+  <DestFile>D:/TheAbsolutelyBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/bin/Windows/mageLayerRegion_v1_720p.xnb</DestFile>
+  <DestTime>2016-12-06T18:04:47.877714+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-11-10T13:26:42+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

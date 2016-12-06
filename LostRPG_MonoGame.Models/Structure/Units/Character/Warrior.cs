@@ -7,7 +7,7 @@
     using LostRPG_MonoGame.Models.Structure.Abilities;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    [Table("Warrior")]
+    //[Table("Warrior")]
     public class Warrior : CharacterUnit, IMeleeAttacking
     {
         private const int WarriorSizeX = 16;
