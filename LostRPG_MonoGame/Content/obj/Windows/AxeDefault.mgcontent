@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<<<<<<< HEAD
   <SourceFile>C:/Users/tedi/Documents/GitHub/TeamProject_DB/LostRPG_MonoGame/Content/AxeDefault.png</SourceFile>
   <SourceTime>2016-12-06T16:15:30.6147713+02:00</SourceTime>
   <DestFile>C:/Users/tedi/Documents/GitHub/TeamProject_DB/LostRPG_MonoGame/Content/bin/Windows/AxeDefault.xnb</DestFile>
   <DestTime>2016-12-06T16:40:25.6450697+02:00</DestTime>
+=======
+  <SourceFile>D:/TheAbsolutelyBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/AxeDefault.png</SourceFile>
+  <SourceTime>2016-12-06T18:03:32.3023913+02:00</SourceTime>
+  <DestFile>D:/TheAbsolutelyBestRepo/TeamProject_DB/LostRPG_MonoGame/Content/bin/Windows/AxeDefault.xnb</DestFile>
+  <DestTime>2016-12-06T18:04:46.618642+02:00</DestTime>
+>>>>>>> origin/ThirdBranch
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-03-30T09:36:08+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

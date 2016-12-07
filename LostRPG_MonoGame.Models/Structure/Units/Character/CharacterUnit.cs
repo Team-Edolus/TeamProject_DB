@@ -6,7 +6,7 @@
     using LostRPG_MonoGame.Models.Interfaces;
     using LostRPG_MonoGame.Models.Structure.Abilities;
     using System.ComponentModel.DataAnnotations.Schema;
-
+    
    [Table("CharacterUnits")]
     public abstract class CharacterUnit : Unit, ICharacterUnit, IAbilityUseable
     {
