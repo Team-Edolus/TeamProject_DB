@@ -3,7 +3,7 @@
     using LostRPG_MonoGame.Models.Graphics;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    [Table("Wizard")]
+    [Table("Wizards")]
     public class Wizard : CharacterUnit // TODO
     {
         public Wizard(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 
@@ -16,5 +16,6 @@
         {
 
         }
+        public string WizardName { get; set; }
     }
 }
