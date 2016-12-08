@@ -2,7 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations.Schema;
     using LostRPG_MonoGame.Models.Graphics;
-    [Table("OldMage")]
+    [Table("OldMages")]
     public class OldMage : FriendlyNPCUnit
     {
         private const int OldMageX = 704;

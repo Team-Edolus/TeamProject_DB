@@ -3,7 +3,7 @@
     using System.ComponentModel.DataAnnotations.Schema;
     using LostRPG_MonoGame.Models.Graphics;
 
-    [Table("Boar1")]
+    [Table("Boar1s")]
     public class Boar1 : EnemyNPCUnit
     {
         private const int Boar1SizeX = 39;

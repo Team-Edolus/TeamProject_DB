@@ -4,7 +4,7 @@
     using System.ComponentModel.DataAnnotations.Schema;
     using LostRPG_MonoGame.Models.Graphics;
 
-    [Table("FriendlyNPCUnit")]
+    [Table("FriendlyNPCUnits")]
     public class FriendlyNPCUnit : Unit
     {
         ////TODO:

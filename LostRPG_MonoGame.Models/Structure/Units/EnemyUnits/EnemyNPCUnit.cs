@@ -3,7 +3,7 @@
     using System.ComponentModel.DataAnnotations.Schema;
     using LostRPG_MonoGame.Models.Graphics;
 
-    [Table("EnemyNPCUnit")]
+    [Table("EnemyNPCUnits")]
     public abstract class EnemyNPCUnit : Unit
     {
         protected EnemyNPCUnit(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 

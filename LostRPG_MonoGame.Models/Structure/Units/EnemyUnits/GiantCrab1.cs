@@ -4,7 +4,7 @@
     using LostRPG_MonoGame.Models.Graphics;
 
 
-    [Table("GiantCrab1")]
+    [Table("GiantCrab1s")]
     public class GiantCrab1 : EnemyNPCUnit
     {
         private const int GiantCrab1SizeX = 22;
