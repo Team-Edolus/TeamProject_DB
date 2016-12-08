@@ -49,8 +49,7 @@
 
         private ITextureBox GetBoxByParent(IRenderable parent)
         {
-            var resultBox = this.textureBoxes.First(tb => tb.ParentObject == parent);
-            return resultBox;
+            return this.textureBoxes.First(tb => tb.ParentObject == parent);
         }
     }
 }

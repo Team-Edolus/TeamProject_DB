@@ -18,5 +18,9 @@
                   GiantCrab1AttPoins, GiantCrab1DefPoints, GiantCrab1MovSpeed, GiantCrab1Sprite)
         {
         }
+
+        protected GiantCrab1()
+        {
+        }
     }
 }

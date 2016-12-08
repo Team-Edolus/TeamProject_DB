@@ -108,9 +108,9 @@ namespace LostRPG.Client
             //// TODO: Add your update logic here
             /// 
             this.currentKeyboardState = Keyboard.GetState();
-            if (previousKeyboardState.IsKeyUp(Keys.F1) && currentKeyboardState.IsKeyDown(Keys.F1))
+            if (this.previousKeyboardState.IsKeyUp(Keys.F1) && this.currentKeyboardState.IsKeyDown(Keys.F1))
             {
-                console.ToggleOpenClose();
+                this.console.ToggleOpenClose();
             }
 
 

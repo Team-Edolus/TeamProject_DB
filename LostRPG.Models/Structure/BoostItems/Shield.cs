@@ -17,5 +17,9 @@
                   ShieldDefaultDamageBoost, ShieldDefaultDefenceBoost, ShieldDefaultSprite)
         {
         }
+
+        protected Shield()
+        {
+        }
     }
 }

@@ -2,6 +2,7 @@
 {
     using System;
     using LostRPG.Client.Interfaces;
+    using LostRPG.Client.Resources.Static;
     using QuakeConsole;
 
     /// <summary>
@@ -33,31 +34,65 @@
         {
             this.interpreter = new ManualInterpreter();
             this.console.Interpreter = this.interpreter;
-            this.RegisterSaveCommand();
+            this.RegisterCommands();
         }
 
-        private void RegisterSaveCommand()
+        private void RegisterCommands()
         {
+            this.interpreter.RegisterCommand("help", this.HelpCommand);
+            this.interpreter.RegisterCommand("clear", str => this.console.Clear());
             this.interpreter.RegisterCommand("save", this.SaveCommand);
+            this.interpreter.RegisterCommand("load", this.LoadCommand);
+        }
+        
+        private string HelpCommand(string[] input)
+        {
+            return ConsoleStrings.HelpCommand;
         }
 
         private string SaveCommand(string[] input)
         {
             if (input.Length < 1)
             {
-                return "Please provide a name for the safe.";
+                return ConsoleStrings.SafeNameNotProvided;
             }
 
             if (string.IsNullOrWhiteSpace(input[0]))
             {
-                return "Please provide a name for the safe.";
+                return ConsoleStrings.SafeNameNotProvided;
             }
             
-            var name = string.Join("_", input);
-            var date = DateTime.Now.ToString("dd.MMM.yy HH:mm:ss");
-            var safeName = name + "<>" + date;
-            this.gameLoader.SaveGame(safeName);
-            return $"{safeName} - Successfully saved!";
+            var safeName = string.Join("_", input);
+            var dateString = DateTime.Now.ToString(ConsoleStrings.SafeRecordDateFormat);
+            var namePlusTime = safeName + "<>" + dateString;
+            var outcome = this.gameLoader.SaveGame(safeName);
+            if (!outcome)
+            {
+                return ConsoleStrings.UnsuccessfullSave;
+            }
+
+            return string.Format(ConsoleStrings.SuccessfullSave, namePlusTime);
+        }
+
+        private string LoadCommand(string[] input)
+        {
+            if (input.Length < 1)
+            {
+                return ConsoleStrings.SafeNameNotProvided;
+            }
+
+            if (string.IsNullOrWhiteSpace(input[0]))
+            {
+                return ConsoleStrings.SafeNameNotProvided;
+            }
+            
+            //TODO?
+            var safeName = input[0];
+
+            this.gameLoader.LoadGame(safeName);
+
+            //TODO.......
+            return "Loaded " + safeName;
         }
     }
 }

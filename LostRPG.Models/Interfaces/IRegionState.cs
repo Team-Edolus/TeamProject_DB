@@ -7,10 +7,10 @@
 
     public interface IRegionState
     {
-        ICollection<FriendlyNPCUnit> FriendlyNPCs { get; set; }
+        ICollection<FriendlyNPCUnit> FriendlyNPCs { get; }
 
-        ICollection<EnemyNPCUnit> Enemies { get; set; }
+        ICollection<EnemyNPCUnit> Enemies { get; }
         
-        ICollection<Item> Items { get; set; }
+        ICollection<Item> Items { get; }
     }
 }

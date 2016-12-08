@@ -68,6 +68,7 @@
     <Compile Include="Regions\Region.cs" />
     <Compile Include="Regions\StartRegion.cs" />
     <Compile Include="Regions\ValleyRegion.cs" />
+    <Compile Include="Resources\Static\ConsoleStrings.cs" />
     <Compile Include="Resources\Static\TmxMapPaths.cs" />
   </ItemGroup>
   <ItemGroup>

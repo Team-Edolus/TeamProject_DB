@@ -30,7 +30,9 @@
 
         public Engine ParentEngine { get; }
 
-        public ICharacterUnit Player { get; private set; }
+        //TODO?
+        //public ICharacterUnit Player { get; private set; }
+        public ICharacterUnit Player { get; set; }
 
         public List<FriendlyNPCUnit> FriendlyNPCs { get; private set; }
 

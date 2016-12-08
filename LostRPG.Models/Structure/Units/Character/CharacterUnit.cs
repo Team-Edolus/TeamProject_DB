@@ -9,6 +9,10 @@
 
     public abstract class CharacterUnit : Unit, ICharacterUnit, IAbilityUseable
     {
+        protected CharacterUnit()
+        {
+        }
+
         protected CharacterUnit(int x, int y, int sizeX, int sizeY, int currentHp, int maxHp, 
             int attackPoints, int defensePoints, int movementSpeed, SpriteType spriteType) 
             : base(x, y, sizeX, sizeY, currentHp, maxHp, attackPoints, defensePoints, movementSpeed, spriteType)
@@ -28,7 +32,8 @@
         public int Level { get; set; }
 
         public int ExperiencePoints { get; set; }
-
+        
+        //// TODO: Move this method out of this class!
         public void SetActiveAbility(string s)
         {
             switch (s)
@@ -40,9 +45,9 @@
                     this.ActiveAbility = ActiveAbilityEnum.SecondAbility;
                     break;
                 case "3":
-                    throw new NotImplementedException();
+                    //throw new NotImplementedException();
                 default:
-                    throw new ArgumentException("No such ability!");
+                    return;
             }
         }
 

@@ -1,6 +1,7 @@
 ﻿// ReSharper disable VirtualMemberCallInConstructor
 namespace LostRPG.Models.GameState
 {
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
@@ -9,9 +10,10 @@ namespace LostRPG.Models.GameState
 
     public class GameStateInfo : IGameStateInfo
     {
-        public GameStateInfo(string safeName, string currentRegion, CharacterUnit player, ICollection<RegionState> regionStates)
+        public GameStateInfo(string safeName, DateTime createdTime, string currentRegion, CharacterUnit player, ICollection<RegionState> regionStates)
         {
             this.SafeName = safeName;
+            this.CreatedOn = createdTime;
             this.CurrentRegion = currentRegion;
             this.Player = player;
             this.RegionStates = regionStates;
@@ -26,6 +28,9 @@ namespace LostRPG.Models.GameState
 
         [Key, Column(Order = 2)]
         public string SafeName { get; set; }
+
+        [Required]
+        public DateTime CreatedOn { get; set; }
 
         [Required]
         public string CurrentRegion { get; set; }

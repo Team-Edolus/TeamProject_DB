@@ -1,11 +1,9 @@
 ﻿namespace LostRPG.Client.Interfaces
 {
-    using LostRPG.Models.Interfaces;
-
     public interface IGameLoader
     {
-        void SaveGame(string safeName);
+        bool SaveGame(string safeName);
 
-        void LoadGame(IGameStateInfo information);
+        bool LoadGame(string safeName);
     }
 }

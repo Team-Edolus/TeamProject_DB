@@ -5,7 +5,6 @@ namespace LostRPG.Client.GameEngine
     using System.Linq;
     using LostRPG.Client.Controllers;
     using LostRPG.Client.Interfaces;
-    using LostRPG.Data.Repositories;
     using LostRPG.Models.Dynamics;
     using LostRPG.Models.Interfaces;
     using LostRPG.Models.Structure;

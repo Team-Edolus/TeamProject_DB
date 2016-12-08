@@ -10,7 +10,7 @@ namespace LostRPG.Data.Repositories
 
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly LostRPGDbContext context = new LostRPGDbContext();
+        private readonly LostRPGDbContext context;
         
         private readonly IRepository<GameStateInfo> gameStateSafes;
         private readonly IRepository<RegionState> regionStates;
@@ -22,6 +22,10 @@ namespace LostRPG.Data.Repositories
 
         public UnitOfWork()
         {
+            this.context = new LostRPGDbContext();
+            //////TODO?
+            ////this.context.Configuration.LazyLoadingEnabled = false;
+
             this.gameStateSafes = new Repository<GameStateInfo>(this.context);
             this.regionStates = new Repository<RegionState>(this.context);
             ////

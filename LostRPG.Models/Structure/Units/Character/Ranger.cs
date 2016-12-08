@@ -9,5 +9,9 @@
             : base(x, y, sizeX, sizeY, currentHp, maxHp, attackPoints, defensePoints, movementSpeed, spriteType)
         {
         }
+
+        protected Ranger()
+        {
+        }
     }
 }

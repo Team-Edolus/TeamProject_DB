@@ -6,10 +6,12 @@
 
     public interface IGameStateInfo
     {
-        string CurrentRegion { get; set; }
+        string SafeName { get; }
 
-        CharacterUnit Player { get; set; }
+        string CurrentRegion { get; }
 
-        ICollection<RegionState> RegionStates { get; set; }
+        CharacterUnit Player { get; }
+
+        ICollection<RegionState> RegionStates { get; }
     }
 }

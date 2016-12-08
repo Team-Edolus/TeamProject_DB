@@ -26,6 +26,10 @@
             this.timeOfLastAbilityUsage = TimeSpan.Zero;
         }
 
+        protected Warrior()
+        {
+        }
+
         public MeleeAbility MeleeAttack(int mouseX, int mouseY, TimeSpan totalElapsedTime)
         {
             var timeDelta = totalElapsedTime.Subtract(this.timeOfLastAbilityUsage);

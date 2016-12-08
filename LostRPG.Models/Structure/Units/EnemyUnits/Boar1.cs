@@ -18,5 +18,9 @@
                   Boar1AttPoins, Boar1DefPoints, Boar1MovSpeed, Boar1Sprite)
         {
         }
+
+        protected Boar1()
+        {
+        }
     }
 }
