@@ -1,6 +1,10 @@
 ﻿ namespace LostRPG_MonoGame.Models.Structure.Abilities
 {
     using LostRPG_MonoGame.Models.Interfaces;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    [Table("Charge")]
+
     public class Charge : MeleeAbility
     {
         private const int ChargeVisualX = 0;

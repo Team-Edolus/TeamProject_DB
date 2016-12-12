@@ -2,6 +2,9 @@
 {
     using LostRPG_MonoGame.Models.Graphics;
     using LostRPG_MonoGame.Models.Interfaces;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    [Table("BasicAttack")]
 
     public class BasicAttack : MeleeAbility, IRenderable
     {

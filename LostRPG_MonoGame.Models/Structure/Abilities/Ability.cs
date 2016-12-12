@@ -1,6 +1,10 @@
 ﻿namespace LostRPG_MonoGame.Models.Structure.Abilities
 {
     using LostRPG_MonoGame.Models.Interfaces;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    [Table("Ability")]
+
     public abstract class Ability : GameObject, IAbility, ITimeoutable
     {
         private int maxLifespanInMS;
@@ -18,6 +22,11 @@
             this.Power = power;
             this.AbilityEffect = abilityEffect;
             this.Caster = caster;
+        }
+
+        public Ability() : this(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, null)
+        {
+
         }
 
         public int VisualX { get; set; }

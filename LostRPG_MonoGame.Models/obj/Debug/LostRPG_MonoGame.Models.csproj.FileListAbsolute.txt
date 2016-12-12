@@ -58,6 +58,5 @@ C:\Users\ug_th\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.
 C:\Users\ug_th\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.Direct2D1.xml
 C:\Users\ug_th\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.XInput.xml
 C:\Users\ug_th\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.MediaFoundation.xml
-C:\Users\ug_th\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\obj\Debug\LostRPG_MonoGame.Models.csprojResolveAssemblyReference.cache
 C:\Users\ug_th\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\obj\Debug\LostRPG_MonoGame.Models.dll
 C:\Users\ug_th\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\obj\Debug\LostRPG_MonoGame.Models.pdb
