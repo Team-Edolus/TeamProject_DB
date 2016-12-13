@@ -30,7 +30,6 @@ C:\Users\Dell\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.D
 C:\Users\Dell\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.Direct2D1.dll
 C:\Users\Dell\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.XInput.dll
 C:\Users\Dell\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.MediaFoundation.dll
-C:\Users\Dell\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\MonoGame.Framework.xml
 C:\Users\Dell\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.XAudio2.xml
 C:\Users\Dell\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.xml
 C:\Users\Dell\Desktop\TeamProject_DB\LostRPG_MonoGame.Models\bin\Debug\SharpDX.DXGI.xml

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/ug_th/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/edolus.ico</SourceFile>
-  <SourceTime>2016-12-11T14:53:04.612789+02:00</SourceTime>
-  <DestFile>C:/Users/ug_th/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/bin/Windows/edolus.xnb</DestFile>
-  <DestTime>2016-12-11T14:59:54.9299589+02:00</DestTime>
+  <SourceFile>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/edolus.ico</SourceFile>
+  <SourceTime>2016-12-13T08:52:32.6048368+02:00</SourceTime>
+  <DestFile>C:/Users/Dell/Desktop/TeamProject_DB/LostRPG_MonoGame/Content/bin/Windows/edolus.xnb</DestFile>
+  <DestTime>2016-12-13T09:01:31.2180974+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-03-30T09:36:08+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

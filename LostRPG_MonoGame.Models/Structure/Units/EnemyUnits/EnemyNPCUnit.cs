@@ -14,8 +14,7 @@
         }
 
         public string Type { get; set; }
-
-        //tryed to make it IColection<Region> but didnt accepted Region<T>!
+ 
         public string IColRegions { get; set; } 
        
     }
