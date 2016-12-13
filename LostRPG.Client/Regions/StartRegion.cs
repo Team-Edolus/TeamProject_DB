@@ -22,6 +22,7 @@
 
         protected override void SetEnemies()
         {
+            this.RegionEnemies.Add(new GiantCrab1(100, 100));
             this.RegionEnemies.Add(new GiantCrab1(200, 200));
             this.RegionEnemies.Add(new GiantCrab1(300, 300));
             this.RegionEnemies.Add(new GiantCrab1(400, 400));

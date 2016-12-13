@@ -21,6 +21,16 @@
 
         protected Boar1()
         {
+
+            this.SizeX = Boar1SizeX;
+            this.SizeY = Boar1SizeY;
+            this.CurrentHP = Boar1CurrHP;
+            this.MaxHP = Boar1MaxHP;
+            this.AttackPoints = Boar1AttPoins;
+            this.DefensePoints = Boar1DefPoints;
+            this.MovementSpeed = Boar1MovSpeed;
+            this.IsAlive = true;
+            this.SpriteType = Boar1Sprite;
         }
     }
 }

@@ -10,13 +10,15 @@ namespace LostRPG.Models.GameState
 
     public class RegionState : IRegionState   
     {
-        public RegionState(string regionName, ICollection<FriendlyNPCUnit> friendlyNPCs, ICollection<EnemyNPCUnit> enemies, ICollection<Item> items)
+        public RegionState(string regionName, ICollection<FriendlyNPCUnit> friendlyNPCs, 
+            ICollection<EnemyNPCUnit> enemies, ICollection<Item> items)
         {
             this.RegionName = regionName;
             this.FriendlyNPCs = friendlyNPCs;
             this.Enemies = enemies;
             this.Items = items;
         }
+
         protected RegionState()
         {
         }

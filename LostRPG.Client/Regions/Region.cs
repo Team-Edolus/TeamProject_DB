@@ -3,9 +3,11 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Linq;
     using LostRPG.Client.GameEngine;
     using LostRPG.Client.Interfaces;
     using LostRPG.Models.Graphics;
+    using LostRPG.Models.Interfaces;
     using LostRPG.Models.Structure;
     using LostRPG.Models.Structure.BoostItems;
     using LostRPG.Models.Structure.Units.EnemyUnits;
@@ -57,15 +59,25 @@
 
         public SpriteType SpriteType { get; protected set; }
 
-        public List<FriendlyNPCUnit> RegionFriendlyNPCs { get; }
+        public List<FriendlyNPCUnit> RegionFriendlyNPCs { get; private set; }
 
-        public List<EnemyNPCUnit> RegionEnemies { get; }
+        public List<EnemyNPCUnit> RegionEnemies { get; private set; }
 
         public List<Obstacle> RegionObstacles { get; }
 
         public List<Gateway> RegionGateways { get; }
 
-        public List<Item> RegionItems { get; }
+        public List<Item> RegionItems { get; private set; }
+
+        public bool ReloadRegion(IRegionState regionState)
+        {
+            //regionState.
+            this.RegionFriendlyNPCs = regionState.FriendlyNPCs.ToList();
+            this.RegionEnemies = regionState.Enemies.ToList();
+            this.RegionItems = regionState.Items.ToList();
+
+            return true;
+        }
 
         protected RegionEntities RegionEntities
         {

@@ -26,9 +26,9 @@
         public int Y { get; set; }
         
         [NotMapped]
-        public int SizeX { get; }
+        public int SizeX { get; protected set; }
 
         [NotMapped]
-        public int SizeY { get; }
+        public int SizeY { get; protected set; }
     }
 }

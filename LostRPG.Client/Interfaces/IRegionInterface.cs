@@ -18,5 +18,7 @@
         List<Gateway> RegionGateways { get; }
 
         List<Item> RegionItems { get; }
+
+        bool ReloadRegion(IRegionState regionState);
     }
 }

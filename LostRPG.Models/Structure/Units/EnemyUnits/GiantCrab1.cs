@@ -21,6 +21,15 @@
 
         protected GiantCrab1()
         {
+            this.SizeX = GiantCrab1SizeX;
+            this.SizeY = GiantCrab1SizeY;
+            this.CurrentHP = GiantCrab1CurrHP;
+            this.MaxHP = GiantCrab1MaxHP;
+            this.AttackPoints = GiantCrab1AttPoins;
+            this.DefensePoints = GiantCrab1DefPoints;
+            this.MovementSpeed = GiantCrab1MovSpeed;
+            this.IsAlive = true;
+            this.SpriteType = GiantCrab1Sprite;
         }
     }
 }

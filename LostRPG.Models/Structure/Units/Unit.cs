@@ -31,7 +31,7 @@
         }
 
         [NotMapped]
-        public int MaxHP { get; }
+        public int MaxHP { get; protected set; }
 
         [NotMapped]
         public int AttackPoints { get; set; }
@@ -47,7 +47,7 @@
         public int MovementSpeed { get; set; }
 
         [NotMapped]
-        public SpriteType SpriteType { get; }
+        public SpriteType SpriteType { get; protected set; }
 
         public int CurrentHP
         {

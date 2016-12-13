@@ -8,7 +8,7 @@
 
     public interface IUnitOfWork
     {
-        IRepository<GameStateInfo>  GameStateSafes { get; }
+        IGameSateRepo GameStateSafes { get; }
 
         IRepository<RegionState> RegionStates { get; }
 

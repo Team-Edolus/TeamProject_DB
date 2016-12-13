@@ -13,6 +13,7 @@ namespace LostRPG.Data
         public LostRPGDbContext()
             : base("name=LostRPGDbContext")
         {
+            //this.Configuration.LazyLoadingEnabled = false;
         }
 
         public virtual IDbSet<GameStateInfo> GameStateInfos { get; set; }

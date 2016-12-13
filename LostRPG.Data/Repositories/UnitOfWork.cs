@@ -12,7 +12,7 @@ namespace LostRPG.Data.Repositories
     {
         private readonly LostRPGDbContext context;
         
-        private readonly IRepository<GameStateInfo> gameStateSafes;
+        private readonly IGameSateRepo gameStateSafes;
         private readonly IRepository<RegionState> regionStates;
 
         private readonly IRepository<CharacterUnit> players;
@@ -26,7 +26,7 @@ namespace LostRPG.Data.Repositories
             //////TODO?
             ////this.context.Configuration.LazyLoadingEnabled = false;
 
-            this.gameStateSafes = new Repository<GameStateInfo>(this.context);
+            this.gameStateSafes = new GameStateRepo(this.context);
             this.regionStates = new Repository<RegionState>(this.context);
             ////
             this.players = new Repository<CharacterUnit>(this.context);
@@ -35,7 +35,7 @@ namespace LostRPG.Data.Repositories
             this.items = new Repository<Item>(this.context);
         }
 
-        public IRepository<GameStateInfo> GameStateSafes => this.gameStateSafes;
+        public IGameSateRepo GameStateSafes => this.gameStateSafes;
 
         public IRepository<RegionState> RegionStates => this.regionStates;
         
